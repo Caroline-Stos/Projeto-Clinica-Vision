@@ -1,6 +1,5 @@
 # Projeto-Clinica-Vision
-Projeto em andamento do curso de Análise e Desenvolvimento de Sistemas do Senai "Morvan Figueiredo".
 
-Equipe DEV TEAM - Yutty (Scrum Master) - Caroline - Amanda - Fernando
+Projeto em andamento para conclusão do curso Analise e Desenvolvimento de Sistemas - Senai Morvan Figueiredo/2023.
 
-Neste projeto será feito um sistema onde uma clínica oftalmológica fictícia de pequeno porte que criamos, quer um sistema com acesso para Administrador, paciente e funcionários.
+Objetivo desse projeto é entregar um sistema gerenciador para uma clinica oftalmológica de pequeno porte onde terão 3 perfis de usuários - Cliente, atendente e administrador.
