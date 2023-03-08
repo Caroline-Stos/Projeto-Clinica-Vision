@@ -1,2 +1,2 @@
 # Projeto-Clinica-Vision
-Desenvolvimento de sistema para uma clínica oftalmológica.
+Desenvolvimento de sistema para clínica oftalmológica.
