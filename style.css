@@ -1,0 +1,14 @@
+body{
+    background-color:#FEFEFE;
+    margin:0%;
+    margin-top: 0%;
+}
+.topo_do_cabeçalho{
+    display: flex;
+    justify-content:flex-end;
+    list-style-type: none;
+    padding: 20px;
+    background-color: #031D38;
+    color:#FEFEFE;
+    order: 
+}
