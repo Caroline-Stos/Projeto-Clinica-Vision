@@ -1,0 +1,52 @@
+body{
+    background-color:#FEFEFE;
+    margin:0%;
+    margin-top: 0%;
+}
+section.cabeçalho{
+    max-width: 1440px;
+    max-height: 150px;
+}
+.topo_do_cabeçalho{
+    display: flex;
+    justify-content:flex-end;
+    list-style-type: none;
+    padding: 20px;
+    background-color: #031D38;
+    color:#FEFEFE;
+}
+.topo_do_cabeçalho>li{
+    padding: 0px 20px 0px 20px;
+}
+.btn_agendar_consulta{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.menu_do_cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FEFEFE;
+}
+.logo{
+    width: 230px;
+    height: 82px;
+}
+.item{
+    padding: 30px;
+    font-weight: bold;
+    color: #160041;
+}
+.imagem_olho{
+    width: 1440px;
+    height: 165px;
+}
+.login{
+    border: none;
+    padding: 5px 50px;
+    background-color: #160041;
+    color: #FEFEFE;
+    font-weight: bold;
+    border-radius: 5px;
+}
