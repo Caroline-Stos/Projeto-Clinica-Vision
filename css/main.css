@@ -1,0 +1,38 @@
+body{
+    background-color:#FEFEFE;
+    margin:0%;
+    margin-top: 0%;
+}
+/* medidas da caixa equipe medica - resumo dos 3 perfis */
+section.equipe_medica{
+    max-height: 922.49px;
+    max-width: 1440px;
+    background-color: #E3F0EF;
+}
+/* Fonte e margem dos textos */
+.equipe_medica>h1{
+    font-family: 'Raleway', sans-serif;
+    background-color: #5CA5B5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+/* diminuir a margem do texto */
+}
+
+/* tamanho das fotos de perfil */
+.perfil{
+    width: 181px;
+    height: 232px;
+}
+section.caixa_dra_andreia{
+    display:flexbox;
+    width: 357px;
+    height: 667px;
+    border: 1px solid #000000;
+    border-radius: 35px;
+}
+.caixa_dra_andreia{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}

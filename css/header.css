@@ -3,50 +3,66 @@ body{
     margin:0%;
     margin-top: 0%;
 }
+/* medidas da caixa do cabeçalho */
 section.cabeçalho{
     max-width: 1440px;
     max-height: 150px;
 }
+/* estilo do cabeçalho */
 .topo_do_cabeçalho{
     display: flex;
+    font-family: 'Raleway', sans-serif;
     justify-content:flex-end;
     list-style-type: none;
     padding: 20px;
     background-color: #031D38;
     color:#FEFEFE;
 }
+/* espaçamento telefone e agende sua consulta */
 .topo_do_cabeçalho>li{
     padding: 0px 20px 0px 20px;
 }
+/* fonte do cabeçalho */
+.menu_do_cabeçalho{
+    font-family: 'Raleway', sans-serif;
+}
+/* estilo do botão agende sua consulta */
 .btn_agendar_consulta{
     border: none;
+    font-family: 'Raleway', sans-serif;
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
 }
+/* disposição dos botoes de navegação do cabeçalho */
 .menu_do_cabeçalho{
     display: flex;
     justify-content: space-around;
     background-color: #FEFEFE;
 }
+/* tamanho da logo no cabeçalho */
 .logo{
     width: 230px;
     height: 82px;
 }
+/* cor e espaçamento entre os botoes de navegação do cabeçalho */
 .item{
-    padding: 30px;
+    padding: 35px;
     font-weight: bold;
     color: #160041;
 }
+/* medidas do banner - imagem do olho */
 .imagem_olho{
     width: 1440px;
     height: 165px;
 }
+/* estilo do botão de login no cabeçalho */
 .login{
     border: none;
-    padding: 5px 50px;
+    padding: 8px 50px;
     background-color: #160041;
     color: #FEFEFE;
     font-weight: bold;
     border-radius: 5px;
 }
+
