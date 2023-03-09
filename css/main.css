@@ -36,7 +36,14 @@ section.caixa_dra_andreia{
     text-align: center;
     background-color: #337F98;
 }
-/* caixa 1 - estilo do texto */
+/* estilo da caixa */
+.retangulo{
+    border: 1px solid #000000;
+    width: 357px;
+    height: 482px;
+    background-color: #A2D3E1;
+}
+/* estilo do texto */
 .caixa_dra_andreia>h3{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
@@ -66,10 +73,4 @@ section.caixa_dra_andreia{
     border: 1px; /* Não consegui colocar a borda */
     border-color: #000000;
     background-color: #1FC625;
-}
-.retangulo{
-    border: 1px solid #000000;
-    width: 357px;
-    height: 482px;
-    background-color: #A2D3E1;
 }
