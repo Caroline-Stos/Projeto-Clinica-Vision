@@ -4,20 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/main.css">
     <title>Clinica Vision</title>
 
 </head>
@@ -28,17 +17,15 @@
 <section class="cabeçalho">
 
 <header>
-
     <ul class="topo_do_cabeçalho">
-        
-        <li>(11) 3276-3630</li>
-        <li><button class="btn_agendar_consulta">Agende sua consulta</button></li>
-        
+        <li>(11)3276-3630</li>
+        <li class="botao_agende">Agende sua consulta</li>
     </ul>
 
-    <ul class="menu_do_cabeçalho">
+    <div class="logo_menu">
 
-            <li><svg class="logo" width="237" height="82" viewBox="0 0 237 82" fill="none"
+    <ul class="menu_do_cabeçalho">
+        <svg class="logo" width="237" height="82" viewBox="0 0 237 82" fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_di_317_3)">
         <circle cx="64.7282" cy="47.2009" r="19.1052" fill="#A2D3E1" />
@@ -124,14 +111,16 @@
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_317_3" result="shape" />
         </filter>
     </defs>
-    </svg></li>
-            <li class="item">Home</li>
-            <li class="item">A Clínica</li>
-            <li class="item">Especialidades</li>
-            <li class="item">Convênios</li>
-            <li class="item">Contato</li>
-            <li class="item"><button class="login">Login</button></li>
+        </svg>
+        <li>Home</li>
+        <li>A Clínica</li>
+        <li>Especialidades</li>
+        <li>Convênios</li>
+        <li>Contato</li>
+        <li>Login</li>
     </ul>
+
+    </div>
 
 </header>
 
@@ -141,74 +130,44 @@
 
 <!--Seção dos três perfis médicos -->
 
-<section class="equipe_medica">
+<section class="Equipe_médica">
 
-    <img class="imagem_olho" src="img/imagem_olho_cabeçalho.png" alt="">
+    <img src="img/imagem_olho_cabeçalho.png" alt="">
 
     <h1>Equipe Médica</h1>
 
-    <section class="caixa_dra_andreia"> 
-
         <h3>Dra. Andreia</h3>
+        <img src="img/imagem_perfilmedico.png" alt="">
+        <p>Oftalmologista
+           CRM 112022
+           RQE Nº 59782</p>
+        <p><b>Especialidades</b>
+            Oftalmo-Pediatra 
+            Neuro Ocular </p>
 
-        <section class="retangulo">
-
-           <img class="perfil" src="img/imagem_perfilmedico.png" alt="">
-
-           <p class="oftalmologista">Oftalmologista</p>
-               <p>CRM 112022</p>
-               <p>RQE Nº 59782</p>
-
-           <p class="especialidades">Especialidades</p>
-               <p>Oftalmo-Pediatra</p>
-               <p>Neuro Ocular </p>
-
-        </section>
-
-            <p><button class="botao_saiba_mais">Saiba Mais</button></p>
-
-    </section>
-
-    <section class="caixa_dr_fabricio">
+    <p class="botão_saiba_mais">Saiba Mais</p>
 
         <h3>Dr. Fabrício</h3>
-        
-        <section class="retangulo">
+        <img src="img/imagem_perfilmedicohomem.png" alt="">
+        <p>Oftalmologista
+        CRM 146288
+        RQE Nº 64825
+        </p>
+        <p><b>Especialidades</b>
+        Cirurgia do Segmento anterior  </p>
 
-            <img class="perfil" src="img/imagem_perfilmedicohomem.png" alt="">
-            
-            <p class="oftalmologista">Oftalmologista</p>
-            <p>CRM 146288</p>
-            <p>Nº 64825</p>
-            <p class="especialidades">Especialidades</p>
-            <p>Cirurgia do Segmento anterior</p>
+    <p class="botão_saiba_mais">Saiba Mais</p>
 
-        </section>
+    <h3>Dra. Ana Cláudia</h3>
+    <img src="img/imagem_perfilmedico.png" alt="">
+        <p>Oftalmologista
+        CRM 152257
+        RQE Nº 69358</p>
+        <p><b>Especialidades</b> 
+            Retina
+            Neuro-oftalmologia </p>
 
-            <p><button class="botao_saiba_mais">Saiba Mais</button></p>
-
-    </section>
-
-    <section class="caixa_dra_ana">
-
-        <h3>Dra. Ana Cláudia</h3>
-
-        <section class="retangulo">
-    
-            <img class="perfil" src="img/imagem_perfilmedico.png" alt="">
-
-            <p class="oftalmologista">Oftalmologista</p>
-            <p>CRM 152257</p>
-            <p>Nº 69358</p>
-            <p class="especialidades">Especialidades</p>
-            <p>Retina</p>
-            <p>Neuro-oftalmologia</p>
-
-        </section>
-
-            <p><button class="botão_saiba_mais">Saiba Mais</button></p>
-
-    </section>
+    <p class="botão_saiba_mais">Saiba Mais</p>
 
 </section>
 
