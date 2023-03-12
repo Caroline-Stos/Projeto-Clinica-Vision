@@ -1,19 +1,11 @@
-/* background */
+/* background de cada bloco da pagina*/
 
 section.esp_detalhada{
     max-width: 1440px;
     max-height: 770px;
     background-color: #C8E2DF;
-    font-family: 'Raleway', sans-serif;
-    position: relative;
-    top: 150px;
-}
-
-.perfil{
-    width: 181px;
-    height: 232px;
-    border-radius: 35px;
-    padding: none;
+    position: relative; 
+/* verificar como fazer o espaçamento correto */
 }
 
 /* Imagem de fundo - svg */
