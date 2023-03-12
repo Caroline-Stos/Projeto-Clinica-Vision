@@ -1,0 +1,41 @@
+body{
+    background-color:#FEFEFE;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap');
+
+  /*  Header - Cor, tamanho e posição*/
+.topo_do_cabeçalho{
+    display: flex;
+    justify-content:flex-end;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #031D38;
+    color:#FEFEFE;
+    font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;
+    /* utilizar order ou algum comando para separar o telefone do agende */
+}
+.botao_agende{
+  padding: 5px;
+  background-color:#FEFEFE;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.menu_do_cabeçalho{
+  display: flex;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  justify-content: space-around;
+}
+.logo_menu{
+  display:inline-flex;
+  padding-right: 20px;
+  padding-left: 50px;
+  align-content:space-around;
+}
+.logo{
+  width: 232px;
+}
