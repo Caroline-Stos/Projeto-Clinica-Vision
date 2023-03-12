@@ -11,10 +11,12 @@ section.cabeçalho{
 /* estilo do cabeçalho */
 .topo_do_cabeçalho{
     display: flex;
-    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     justify-content:flex-end;
     list-style-type: none;
-    padding: 15px;
+    padding: 10px;
     background-color: #031D38;
     color:#FEFEFE;
 }
@@ -25,6 +27,7 @@ section.cabeçalho{
 /* fonte do cabeçalho */
 .menu_do_cabeçalho{
     font-family: 'Raleway', sans-serif;
+    list-style-type: none;
 }
 /* estilo do botão agende sua consulta */
 .btn_agendar_consulta{
@@ -47,15 +50,11 @@ section.cabeçalho{
 }
 /* cor e espaçamento entre os botoes de navegação do cabeçalho */
 .item{
-    padding: 35px;
+    padding: 25px;
     font-weight: bold;
     color: #160041;
 }
-/* medidas do banner - imagem do olho */
-.imagem_olho{
-    width: 1440px;
-    height: 165px;
-}
+
 /* estilo do botão de login no cabeçalho */
 .login{
     border: none;
