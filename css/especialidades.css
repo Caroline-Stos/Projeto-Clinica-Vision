@@ -1,38 +1,34 @@
-/* background de cada bloco da pagina*/
-
-section.esp_detalhada{
-    max-width: 1440px;
-    max-height: 770px;
+/* background de cada bloco da pagina ----------------------------------------------------------------------------*/
+.esp_detalhada{
+    width: 100%;
+    height: 770px;
     background-color: #C8E2DF;
-    position: relative; 
-/* verificar como fazer o espaçamento correto */
+    position: relative;
+    margin: 30px 0px 30px 0px;
 }
 
-/* Imagem de fundo - svg */
-.bg_esp_andreia{
+/* comandos para aplicar os espaços em branco entre os blocos ----------------------------------------------------------------------------*/
+#espacamento_pagina{
     display: flex;
-    width: 900px;
-    height: 770px;
+    flex-direction: column;
 }
-.bg_esp_fabricio{
+
+/* tamanho das listras azuis do background - svg ----------------------------------------------------------------------------*/
+.bg_listras_azuis{
     display: flex;
-    width: 900px;
-    height: 770px;
-}
-.bg_esp_ana{
-    display: flex;
-    width: 900px;
+    width: 100%;
     height: 770px;
 }
 
-/* foto + nome + CRM + especialidade */
-.alinhamento{
+/* foto + nome + CRM + especialidade ---------------------------------------------------------------------------- */
+
+.alinhamento_crm{
     display: flex;
-    flex-wrap:nowrap;
+    flex-direction: row;
     padding: 80px;
 }
-.box1{
-    display:grid;
+.box_crm{
+    display:flexbox;
     justify-items:left;
     text-align:justify;
     padding: 45px;
@@ -40,12 +36,12 @@ section.esp_detalhada{
     position: relative;
     top: -45px;
 }
-.box1>h3{
+.box_crm>h3{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding-bottom: 30px;
 }
-.box1>p{
+.box_crm>p{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding-bottom: 10px;
@@ -64,8 +60,8 @@ scan{
     position: relative;
     top: 26px;
 }
-/* Tratamentos e especialidades */
-.box2{
+/* Tratamentos e especialidades ----------------------------------------------------------------------------*/
+.box_tratamento_especialidades{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding-top: 20px;
@@ -75,36 +71,41 @@ scan{
     top: -130px;
     text-align: justify;
 }
-.box2>h4{
+.box_tratamento_especialidades>h4{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     padding-bottom: 20px;
 }
-.box2>ul{
+.box_tratamento_especialidades>ul{
     padding-bottom: 20px;
 }
-.box2>p{
+.box_tratamento_especialidades>p{
     padding-bottom: 10px;
 }
 
-/* alinhamento de elementos a direito - dr fabricio */
+/* alinhamento de elementos a direita - dr fabricio ----------------------------------------------------------------------------*/
 
-.box3{
-    display:grid;
-    justify-items:right;
-    text-align:justify;
-    padding: 45px;
-    padding-right: 240px;
-    padding-top: 80px;
-    position: relative;
-    top: -45px;
+/* foto + nome + CRM + especialidade */
+.alinhamento_crm_fabricio{
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 80px;
 }
-.box3>h3{
+.box_crm_fabricio{
+    display:flexbox;
+    text-align: right;
+    justify-items: right;
+    padding: 45px;
+    padding-top: 80px; 
+    position: relative;
+    top:-45px;
+}
+.box_crm_fabricio>h3{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding-bottom: 30px;
 }
-.box3>p{
+.box_crm_fabricio>p{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding-bottom: 10px;
@@ -120,21 +121,9 @@ scan{
     position: relative;
     top: 26px;
 }
-.perfil2{
-    width: 181px;
-    height: 232px;
-    border-radius: 35px;
-    position: relative;
-    left: 1000px;
-}
-.alinhamento_2{
-    display: flex;
-    flex-wrap:nowrap;
-    padding: 80px;
-    justify-content: space-between;
-}
-/* Tratamentos e especialidades */
-.box4{
+
+/* Tratamentos e especialidades ---------------------------------------------------------------------------- */
+.box_tratamento_especialidades_fabricio{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding-top: 20px;
@@ -144,15 +133,15 @@ scan{
     position: relative;
     top: -130px;
 }
-.box4>h4{
+.box_tratamento_especialidades_fabricio>h4{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     padding-bottom: 20px;
 }
-.box4>ul{
+.box_tratamento_especialidades_fabricio>ul{
     padding-bottom: 20px;
 }
-.box4>p{
+.box_tratamento_especialidades_fabricio>p{
     padding-bottom: 10px;
 }
 

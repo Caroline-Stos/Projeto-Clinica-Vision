@@ -5,25 +5,33 @@ body{
 }
 /* medidas do banner - imagem do olho */
 .imagem_olho{
-    width: 1440px;
-    height: 165px;
+    width: 100%;
+    height: 205px;
 }
 /* Fonte e margem do titulo */
-.titulo_equipe_medica{
+.elemento{
+    text-align: center;
     font-family: 'Raleway', sans-serif;
-    color: #FEFEFE;
+    color: #17344E;
     font-weight: bold;
     font-size: 40px;
-    padding: 8px 50px;/* IMPORTANTE: verificar como centralizar o titulo */
-    border: none;
-    border-radius: 10px;
-    background-color: #5CA5B5;
 }
+/* comandos para alinhamento do titulo no centro do banner olho */
+.elemento{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top:50%;
+    left: 50%;
+    margin-top:-25px;
+    margin-left: -150px;
 
-.titulo_equipe_medica{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+/* container que possui as mesmas medidas do banner olho, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
+.titulo_container{
+    position: relative;
+    width: 100%;
+    height: 205px;
 }
 
 /* background dos cards - resumo dos 3 perfis */

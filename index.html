@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--folhas de estilo-->
     <link rel="stylesheet" href="css/especialidades.css">
     <link rel="stylesheet" href="css/cards_eq_medica.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/base.css">
+
     <!--Link das fontes - Raleway e Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,44 +27,46 @@
     <title>Clinica Vision</title>
 
 </head>
+
 <body>
 
 <!--Seção do cabeçalho - Feito por Caroline -->
 
-<header>
+<header> <!-- Aqui é o cabeçalho -->
 
-    <ul class="topo_do_cabeçalho">
-        
-        <li>(11) 3276-3630</li>
-        <li><button class="btn_agendar_consulta">Agende sua consulta</button></li>
-        
-    </ul>
+        <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
+            <p>(11) 3275-3530</p>
+            <a href="#" target="_blank">Agende sua consulta </a> <!-- Este link está em formato de botão -->
+        </div>
 
-    <ul class="menu_do_cabeçalho">
-
-            <li><img class="logo" src="img/logo-escuro.svg" alt="logotipo"></li>
-            <li class="item">Home</li>
-            <li class="item">A Clínica</li>
-            <li class="item">Especialidades</li>
-            <li class="item">Convênios</li>
-            <li class="item">Contato</li>
-            <li class="item"><button class="login">Login</button></li>
-    </ul>
-
+        <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
+            <img class="logo__cabecalho" src="img/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
+            <div class="cabecalho__menu">
+                <ul class="cabecalho__menu__lista">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#" id="menu__link__clinica">A Clínica</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Exames</a></li>
+                    <li><a href="#">Convênios</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <a class="cabecalho__link__login" href="#" target="_blank">LOGIN</a> <!-- link do login também vai ficar em formato de botão -->
+            </div>
 </header>
 
 <main>
 
 <!--Seção três cards - perfis médicos -->
 
-    <img class="imagem_olho" src="img//img_olho_cabeçalho.png" alt="imagem de olho">
+        <div class="titulo_container">
 
-    <!--Titulo da página-->
-    <section class="titulo_equipe_medica">
-        
-        <h1>Equipe Médica</h1>
-    
-    </section>
+            <img class="imagem_olho" src="img//img_olho_cabeçalho.png" alt="imagem de olho">
+            
+            <div class="elemento">Equipe Médica</div> <!--Titulo equipe médica-->
+
+        </div>
+
+    </div>
 
 <section class="equipe_medica">
 
@@ -69,7 +74,7 @@
 
     <section class="card_dra_andreia"> 
 
-        <h3>Dra. Andreia</h3>
+        <h3>Dra. Andreia</h3> <!--Subtitulo nome Dra Andreia-->
 
         <section class="retangulo">
 
@@ -134,17 +139,21 @@
 
 </section>
 
+<!-------------------------------------------------------------------------------------------------------------------->
+
 <!--Seção detalhada - Dra Andreia -->
+
+<div id="espacamento_pagina">
 
 <section class="esp_detalhada">
 
 <div style='position:relative; top:0px; left:0px;'>
 
     <div style='position:absolute; top:0px; right:0px;'>
-        <img class="bg_esp_andreia" src="img/bg_esp_1.svg">
+        <img class="bg_listras_azuis" src="img/bg_esp_1.svg">
     </div>
 
-    <div class="alinhamento">
+    <div class="alinhamento_crm">
         
         <div>
 
@@ -152,7 +161,7 @@
 
         </div>
 
-        <div class="box1">
+        <div class="box_crm">
 
            <h3>Dra. Andreia</h3>
 
@@ -166,7 +175,7 @@
 
     </div>
 
-    <div class="box2">
+    <div class="box_tratamento_especialidades">
 
         <h4>Tratamentos</h4>
 
@@ -196,18 +205,18 @@
 <div style='position:relative; top:0px; left:0px;'>
 
     <div style='position:absolute; top:0px; left:0px;'>
-        <img class="bg_esp_fabricio" src="img/bg_esp_2.svg">
+        <img class="bg_listras_azuis" src="img/bg_esp_2.svg">
     </div>
 
-        <div class="alinhamento_2">
+        <div class="alinhamento_crm_fabricio">
 
             <div>
 
-                <img class="perfil2" src="img/img_perfil_med_homem.png" alt="perfil medico">
+                <img class="perfil" src="img/img_perfil_med_homem.png" alt="perfil medico">
 
             </div>
 
-            <div class="box3">
+            <div class="box_crm_fabricio">
 
                 <h3>Dr. Fabrício</h3>
 
@@ -221,7 +230,7 @@
         
         </div>
 
-            <div class="box4">
+            <div class="box_tratamento_especialidades_fabricio">
 
                 <h4>Tratamentos</h4>
 
@@ -253,10 +262,10 @@
 <div style='position:relative; top:0px; left:0px;'>
 
         <div style='position:absolute; top:0px; right:0px;'>
-            <img class="bg_esp_fabricio" src="img/bg_esp_1.svg">
+            <img class="bg_listras_azuis" src="img/bg_esp_1.svg">
         </div>
 
-            <div class="alinhamento">
+            <div class="alinhamento_crm">
 
                 <div>
                     
@@ -264,7 +273,7 @@
             
                 </div>
 
-                <div class="box1">
+                <div class="box_crm">
 
                     <h3>Dra. Ana Cláudia</h3>
 
@@ -277,7 +286,7 @@
             
             </div>
 
-                <div class="box2">
+                <div class="box_tratamento_especialidades">
 
                     <h4>Tratamentos</h4>
 
@@ -290,7 +299,7 @@
                         <li>Miopia</li>
                     </ul>
 
-                    <h4>Tratamentos</h4>
+                    <h4>Especialidades</h4>
 
                     <p>Graduação em Medicina - Universidade de São Paulo. Residência Médica em Oftalmologia - Universidade de São Paulo.</p>
                     <p>Título de especialista em Oftalmologia - Conselho Brasileiro de OftalmologiaEspecialização em Retina Cirúrgica e Neuroftalmologia, USPDoutora pela USP.    </p>
@@ -301,7 +310,11 @@
 
 </section>
 
+</div>
+
 </main>
+
+
 
 <!--Footer-->
 
@@ -311,9 +324,9 @@
 
         <div id="horario">
 
-            <img class="logo__rodape" src="/img/logo-claro.svg" alt="logotipo">
+            <img class="logo__rodape" src="img/logo-claro.svg" alt="logotipo">
 
-            <p class="texto__rodape">
+            <p class="texto texto__rodape">
                 Horário de Atendimento
                 <br>
                 Seg a Sex das 8h às 18h
@@ -329,12 +342,12 @@
                     <span class="texto texto__rodape">(11) 3276-3530</span>
                 </li>
                 <li>
-                    <img src="/home-page/imagem/whatsapp.png" alt="Ícone do Whatsapp"><span
+                    <img src="img/whatsapp.png" alt="Ícone do Whatsapp"><span
                         class="texto texto__rodape">(11) 96731-8829</span>
                 </li>
                 <li>
                     <a href="https://goo.gl/maps/iw4931p3dmeGrhv8A" target="_blank">
-                        <img src="/home-page/imagem/mapa.png" alt="Ícone de localização"><span
+                        <img src="img/localizacao.png" alt="Ícone de localização"><span
                             class="texto texto__rodape">R. Padre Adelino, 333 - Belenzinho
                             <br>
                             São Paulo - SP, CEP: 03303-000</span>
@@ -349,8 +362,8 @@
 
             <div id="redes__links">
 
-                <a href="https://www.instagram.com/" target="_blank"><img src="/home-page/imagem/instagram.png" alt="Ícone do Instagram"></a>
-            <a href="https://pt-br.facebook.com/" target="_blank"><img src="/home-page/imagem/facebook.png" alt="Ícone do Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Ícone do Instagram"></a>
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Ícone do Facebook"></a>
             </div>
 
         </div>
@@ -358,7 +371,7 @@
         <div id="info-dev">
 
             <p class="texto texto__rodape" id="info-dev__texto">Desenvolvido por</p>
-            <a href="#" target="_blank"><img id="logo-time" src="/home-page/imagem/dev-team.svg"
+            <a href="#" target="_blank"><img id="logo-time" src="img/dev-team.svg"
                 alt="Logotipo do grupo de desenvolveres DEV TEAM"></a>
 
         </div>
