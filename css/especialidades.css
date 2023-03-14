@@ -1,0 +1,163 @@
+/* background de cada bloco da pagina*/
+
+.esp_detalhada{
+    width: 100%;
+    height: 770px;
+    background-color: #C8E2DF;
+    position: relative;
+    margin: 56px 0px 56px 0px;
+/* verificar como fazer o espaçamento correto */
+}
+
+#espacamento_pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem de fundo - svg */
+.bg_esp_andreia{
+    display: flex;
+    width: 100%;
+    height: 770px;
+}
+.bg_esp_fabricio{
+    display: flex;
+    width: 100%;
+    height: 770px;
+}
+.bg_esp_ana{
+    display: flex;
+    width: 100%;
+    height: 770px;
+}
+
+/* foto + nome + CRM + especialidade */
+.alinhamento{
+    display: flex;
+    flex-wrap:nowrap;
+    padding: 80px;
+}
+.box1{
+    display:grid;
+    justify-items:left;
+    text-align:justify;
+    padding: 45px;
+    padding-top: 80px;
+    position: relative;
+    top: -45px;
+}
+.box1>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.box1>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+scan{
+    font-weight: bold;
+}
+.btn_duvidas{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    border:none;
+    background-color: #1FC625;
+    position: relative;
+    top: 26px;
+}
+/* Tratamentos e especialidades */
+.box2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 450px;
+    position: relative;
+    top: -130px;
+    text-align: justify;
+}
+.box2>h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.box2>ul{
+    padding-bottom: 20px;
+}
+.box2>p{
+    padding-bottom: 10px;
+}
+
+/* alinhamento de elementos a direito - dr fabricio */
+
+.box3{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    text-align:justify;
+    position: relative;
+    top: -45px;
+}
+.box3>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.box3>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.btn_duvidas2{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    border:none;
+    background-color: #1FC625;
+    position: relative;
+    top: 26px;
+}
+.perfil2{
+    width: 181px;
+    height: 232px;
+    border-radius: 35px;
+    position: relative;
+    left: 1038px;
+}
+.alinhamento_2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px;
+    width: 100%;
+    
+}
+/* Tratamentos e especialidades */
+.box4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 450px;
+    text-align: right;
+    position: relative;
+    top: -130px;
+}
+.box4>h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.box4>ul{
+    padding-bottom: 20px;
+}
+.box4>p{
+    padding-bottom: 10px;
+}
+
