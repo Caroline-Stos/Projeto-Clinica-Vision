@@ -56,9 +56,9 @@
 
 <main>
 
-<!--Seção três cards - perfis médicos -->
+<!--Banner e Titulo-->
 
-        <div class="titulo_container">
+        <div class="titulo_container"> <!--container que contem o titulo-->
 
             <img class="imagem_olho" src="img//img_olho_cabeçalho.png" alt="imagem de olho">
             
@@ -68,72 +68,74 @@
 
     </div>
 
-<section class="equipe_medica">
+<!--Seção três cards - perfis médicos -->
 
-    <div class="alinhamento_horizontal">
+<section class="equipe_medica"> <!--container contendo os 3 cards do medicos para aplicar o background-->
 
-    <section class="card_dra_andreia"> 
+    <div class="alinhamento_horizontal" id="efeito_hover"> <!--div para linhar os 3 cards horizontalmente e colocar efeito de zoom-->
 
-        <h3>Dra. Andreia</h3> <!--Subtitulo nome Dra Andreia-->
+        <section class="card_dra_andreia"> <!--classe para dar forma aos cards-->
 
-        <section class="retangulo">
+            <h3>Dra. Andreia</h3>
 
-           <p><img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico"></p>
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
 
-           <p class="oftalmologista">Oftalmologista</p>
-               <p>CRM 112022</p>
-               <p>RQE Nº 59782</p>
+                    <p><img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico"></p>
 
-           <p class="especialidades">Especialidades</p>
-               <p>Oftalmo-Pediatra</p>
-               <p>Neuro Ocular </p>
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 112022</p>
+                    <p>RQE Nº 59782</p>
+
+                    <p class="especialidades">Especialidades</p>
+                    <p>Oftalmo-Pediatra</p>
+                    <p>Neuro Ocular </p>
+
+                </section>
+
+            <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
 
         </section>
 
-            <p><button class="botao_saiba_mais">Saiba Mais</button></p>
+        <section class="card_dr_fabricio"> <!--classe para dar forma aos cards-->
 
-    </section>
-
-    <section class="card_dr_fabricio">
-
-        <h3>Dr. Fabrício</h3>
+            <h3>Dr. Fabrício</h3>
         
-        <section class="retangulo">
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
 
-            <p><img class="perfil" src="img//img_perfil_med_homem.png" alt="perfil medico"></p>
+                    <p><img class="perfil" src="img/img_perfil_med_homem.png" alt="perfil medico"></p>
             
-            <p class="oftalmologista">Oftalmologista</p>
-            <p>CRM 146288</p>
-            <p>Nº 64825</p>
-            <p class="especialidades">Especialidades</p>
-            <p>Cirurgia do Segmento anterior</p>
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 146288</p>
+                    <p>Nº 64825</p>
+                    <p class="especialidades">Especialidades</p>
+                    <p>Cirurgia do Segmento anterior</p>
+
+                </section>
+
+                <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
 
         </section>
 
-            <p><button class="botao_saiba_mais">Saiba Mais</button></p>
+        <section class="card_dra_ana"> <!--classe para dar forma aos cards-->
 
-    </section>
+            <h3>Dra. Ana Cláudia</h3>
 
-    <section class="card_dra_ana">
-
-        <h3>Dra. Ana Cláudia</h3>
-
-        <section class="retangulo">
+                <section class="retangulo"> <!--retangulo interno do card contendo os dados e foto-->
     
-            <p><img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico"></p>
+                    <p><img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico"></p>
 
-            <p class="oftalmologista">Oftalmologista</p>
-            <p>CRM 152257</p>
-            <p>Nº 69358</p>
-            <p class="especialidades">Especialidades</p>
-            <p>Retina</p>
-            <p>Neuro-oftalmologia</p>
+                    <p class="oftalmologista">Oftalmologista</p>
+                    <p>CRM 152257</p>
+                    <p>Nº 69358</p>
+                    <p class="especialidades">Especialidades</p>
+                    <p>Retina</p>
+                    <p>Neuro-oftalmologia</p>
+
+                </section>
+
+                <p><button class="botao_saiba_mais"><a href="#" id="link">Saiba Mais</a></button></p> <!--botão saiba mais-->
 
         </section>
-
-            <p><button class="botao_saiba_mais">Saiba Mais</button></p>
-
-    </section>
 
     </div>
 
@@ -149,29 +151,29 @@
 
 <div style='position:relative; top:0px; left:0px;'>
 
-    <div style='position:absolute; top:0px; right:0px;'>
-        <img class="bg_listras_azuis" src="img/bg_esp_1.svg">
-    </div>
+        <div style='position:absolute; top:0px; right:0px;'>
+            <img class="bg_listras_azuis" src="img/bg_esp_1.svg">
+        </div>
 
     <div class="alinhamento_crm">
         
-        <div>
+            <div>
 
-        <img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico">
+                <img class="perfil" src="img/img_perfil_med_mulher.png" alt="perfil medico">
 
-        </div>
+            </div>
+            
+            <div class="box_crm">
 
-        <div class="box_crm">
+                <h3>Dra. Andreia</h3>
 
-           <h3>Dra. Andreia</h3>
+                    <p><scan>Oftalmologista</scan> CRM 112022   RQE Nº 59782</p>
 
-               <p><scan>Oftalmologista</scan> CRM 112022   RQE Nº 59782</p>
+                    <p><scan>Especialidades</scan> Oftalmo-Pediatra / Neuro Ocular</p>
 
-               <p><scan>Especialidades</scan> Oftalmo-Pediatra / Neuro Ocular</p>
+                    <p><button class="btn_duvidas"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
 
-           <p><button class="btn_duvidas">Dúvidas</button></p>
-
-        </div>
+            </div>
 
     </div>
 
@@ -192,6 +194,7 @@
 
         <p>Graduação em Medicina pela Faculdade de Medicina do ABC. Residência Médica em oftalmologia pelo Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (HC FMUSP).</p>
         <p>Título de Especialista pelo CBO. Especialização em Estrabismo pelo pelo Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo. </p>
+
     </div>
 
 </div>
@@ -224,7 +227,7 @@
 
                 <p><scan>Especialidades</scan> Cirurgia do Segmento Anterior </p> 
 
-                <p><button class="btn_duvidas2">Dúvidas</button></p>
+                <p><button class="btn_duvidas_fabricio"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
 
             </div>
         
@@ -280,7 +283,7 @@
                     <p><scan>Oftalmologista</scan> CRM 152257 RQE Nº 69358 </p>
                     <p><scan>Especialidades</scan> Retina / Neuro-oftalmologia </p>
 
-                    <p></p><button class="btn_duvidas">Dúvidas</button></p>
+                    <p></p><button class="btn_duvidas"><a href="#" id="entre_em_contato">Dúvidas</a></button></p>
                 
                 </div>
             
@@ -313,8 +316,6 @@
 </div>
 
 </main>
-
-
 
 <!--Footer-->
 
