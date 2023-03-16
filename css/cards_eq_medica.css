@@ -4,42 +4,54 @@ body{
     margin-top: 0%;
 }
 /* medidas do banner - imagem do olho */
-.imagem_olho{
+.bg_painel{
     width: 100%;
     height: 205px;
 }
 /* Fonte e margem do titulo "equipe medica" */
-.elemento{
+.titulo{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: var(--azul-roxo);
     font-weight: bold;
+    font-size: 60px;
+}
+/* container que possui o banner de bg, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
+.titulo_container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-image: url(/img/bg_painel.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+/* faixa branca atras do titulo */
+.fundo_titulo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--branco);
+    opacity: 0.7;
+}
+/* titulo */
+.titulo{
+    position: absolute;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-weight: 700;
     font-size: 40px;
 }
-/* comandos para alinhamento do titulo no centro do banner olho */
-.elemento{
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    top:50%;
-    left: 50%;
-    margin-top:-25px;
-    margin-left: -150px;
-
-}
-/* container que possui as mesmas medidas do banner olho, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
-.titulo_container{
-    position: relative;
-    width: 100%;
-    height: 205px;
-    margin-bottom: 60px;
-}
-
 /* background dos cards - resumo dos 3 perfis */
 .equipe_medica{
     max-width: 100%;
     padding: 80px;
-    margin: 30px 0px 30px 0px;
+    margin-bottom: 50px;
     background-color: var(--azul-claro-light);
     position: relative;
 }

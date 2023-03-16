@@ -2,9 +2,7 @@
     background-color: var(--azul-escuro);
     height: 250px;
     width: 100%;
-    margin-top: 30px;
 }
-  
 .rodape {
     align-items: center;
     display: flex;
