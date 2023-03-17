@@ -13,6 +13,7 @@
     --cinza: #44403F;
     --preto: #000000;
     --verde: #1FC625;
+    --cinza-claro: #D9D9D9; /* adicionado nova cor */
   
     --titulo: 'Raleway', sans-serif;
     --texto: 'Montserrat', sans-serif;
@@ -30,6 +31,7 @@
   
   .texto {
     font-family: var(--texto);
+    text-align: center;
   }
   
   .titulo__padrao__home {
