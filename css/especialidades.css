@@ -40,6 +40,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding-bottom: 30px;
+    font-weight: bold;
 }
 .box_crm>p{
     font-family: 'Montserrat', sans-serif;
@@ -80,6 +81,7 @@ scan{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 .box_tratamento_especialidades>ul{
     padding-bottom: 20px;
@@ -109,6 +111,7 @@ scan{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     padding-bottom: 30px;
+    font-weight: bold;
 }
 .box_crm_fabricio>p{
     font-family: 'Montserrat', sans-serif;
@@ -142,6 +145,7 @@ scan{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 .box_tratamento_especialidades_fabricio>ul{
     padding-bottom: 20px;

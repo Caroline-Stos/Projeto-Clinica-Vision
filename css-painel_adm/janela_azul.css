@@ -14,47 +14,61 @@
 /* propriedades da janela azul lado esquerdo */
 .janela_azul{
     width: 30%;
-    background-color:#337F98;
+    height: 700px;
+    background-color:var(--azul-escuro-light);
     border-radius: 0px 0px 70px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/* alinhamento do conteudo dentro da janela azul */
 .janela_elementos{
     display: flex;
     flex-direction: column;
 }
-
+/* estilo do conteudo da janela azul */
 .texto{
     font-family: var(--titulo);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--branco);
+    font-size: 20px;
 }
-
+/* medidas do icone adm */
 .icone_adm{
     width: 226px;
     height: 226px;
     margin-bottom: 20px;
+    align-items: center;
 }
-
+/* medidas e estilo do botão novo usuário */
 .btn_novo_usuario{
-    width: 200px;
+    width: 250px;
     font-family: var(--titulo);
-    color: #ffffff;
+    font-size: 20px;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    background-color: #66B5C4;
+    background-color: #85D7DF;
     border: none;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
 }
+/* retirando sublinhado do link */
+a{
+    text-decoration: none;
+    color: var(--branco);
+}
+/* medidas e estilo do botão logout */
 .btn_logout{
-    width: 200px;
+    width: 250px;
     font-family: var(--titulo);
-    color: #ffffff;
+    font-size: 20px;
+    color: var(--branco);
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    border: 1px solid #000000;
-    background-color: #337F98;
-    border-color: #ffffff;
+    border: 1px solid;
+    background-color: var(--azul-escuro-light);
+    border-color:var(--branco);
+    font-weight: bold;
+    margin-top: 100px;
 }
