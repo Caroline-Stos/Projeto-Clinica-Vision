@@ -42,7 +42,7 @@
     align-items: center;
 }
 /* medidas e estilo do botão novo usuário */
-.btn_novo_usuario{
+#btn_novo_usuario{
     width: 250px;
     font-family: var(--titulo);
     font-size: 20px;

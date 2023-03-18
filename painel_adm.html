@@ -51,7 +51,14 @@
 
             <div class="texto">"Nome"</div>
             
-            <button class="btn_novo_usuario"><a href="buttom_adm.html">+ Criar novo usuário</a></button><!-- Este link está em formato de botão -->
+            <select id="btn_novo_usuario"><!-- Menu suspenso -->
+
+                <optgroup label="+ Criar novo usuário">
+                    <option value="Paciente">Paciente</option>
+                    <option value="Funcionário">Funcionário</option>
+                </optgroup>
+            
+            </select>
 
             <button class="btn_logout"><a href="#">Fazer logout</a></button><!-- Este link está em formato de botão -->
 
