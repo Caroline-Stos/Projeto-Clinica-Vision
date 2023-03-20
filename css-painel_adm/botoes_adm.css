@@ -1,0 +1,44 @@
+/* background */
+body{
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: 500px;
+}
+/* medidas dos icones dos botoes brancos */
+.btn_quadrado>img{
+    width: 120px;
+    height: 120px;
+}
+/* alinhamento, tamanho e cor dentro dos botoes brancos */
+.btn_quadrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 230px;
+    background-color: var(--branco);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: var(--preto);
+}
+/* estilo do texto dentro dos botoes */
+.btn_quadrado>h1{
+    font-family: var(--titulo);
+    color: var(--preto);
+    font-weight:600;
+    padding-top: 20px;
+    text-align: center;
+}
+/* alinhamento entre os botoes */
+.container_botoes{
+    width: 60%;
+    margin-left: 35%;
+    margin-right: 5px;
+    height: 600px;
+    margin-top: -350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
