@@ -25,11 +25,11 @@
     font-size: 16px;
     height: 30px;
     justify-content: center;
-    margin-left: 80px;
-    margin-right: 3%;
+    margin: 0 5.5%;
+    min-width: 185px;
+    max-width: 208px;
     text-decoration: none;
     text-align: center;
-    width: 208px;
 }
 
 .cabecalho__container {
@@ -41,31 +41,31 @@
     font-size: 16px;
     font-family: var(--titulo);
     height: 100px;
-    justify-content: space-between;
+    justify-content: space-around;
     text-transform: uppercase;
     width: 100%;
 }
 
 .logo__cabecalho {
     height: 85px;
-    margin-left: 3%;
-    width: 235px;
-}
-
-.cabecalho__menu {
-    display: flex;
+    margin: 0 3%;
+    max-width: 235px;
+    min-width: 150px;
 }
 
 .cabecalho__menu__lista {
     align-items: center;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .cabecalho__menu__lista li {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    width: 135px;
+    padding: 10px 16px;
+    white-space: nowrap;
 }
 
 .cabecalho__menu__lista a {
@@ -73,10 +73,6 @@
     display: flex;
     color: var(--azul-roxo);
     text-decoration: none;
-}
-
-#menu__link__clinica {
-    padding-right: 40px;
 }
 
 .cabecalho__link__login {
@@ -87,14 +83,78 @@
     display: flex;
     height: 40px;
     justify-content: center;
-    margin: 0 3%;
+    margin: 0 3% 0 0;
     text-decoration: none;
-    width: 138px;
+    width: 100px;
+}
+
+.mobile-menu-amburguer {
+    display: none;
+    margin-right: 1em;
+}
+
+.mobile-menu-amburguer div {
+    height: 2px;
+    background: var(--azul-roxo);
+    margin: 8px;
+    width: 32px;
+}
+
+.mobile-menu-amburguer:hover {
+    cursor: pointer;
+}
+
+.mostrarMenu{
+    display: block!important;
+    animation: fadein 1s alternate;
+    -webkit-animation: fadein 1s alternate;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho__menu {
+        background: var(--branco);
+        display: none;
+        height: auto;
+        top: 150px;
+        right: 0;
+        border: 2px var(--branco);
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+    }
+    
+    .cabecalho__menu__lista {
+        flex-direction: column;
+    }
+
+    .mobile-menu-amburguer {
+        display: block;
+    }
+}
+    
+@media screen and (max-width: 432px) {
+    .faixa {
+        font-size: 16px;
+        justify-content: space-evenly;
+    }
+    
+    .faixa a {
+        margin: 0;
+    }
 }
 
 /* pagina ADM - painel de controle */
 
 #menu__link__usuario {
+    padding-right: 40px;
+}
+
+#menu__link__clinica {
     padding-right: 40px;
 }
 
