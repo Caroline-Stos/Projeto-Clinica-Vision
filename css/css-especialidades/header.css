@@ -14,6 +14,7 @@
 
 .faixa p {
     color: var(--branco);
+    margin: 0 5.5%;
 }
 
 .faixa a {
@@ -157,5 +158,41 @@
 #menu__link__clinica {
     padding-right: 40px;
 }
+
+/* --------------------------------- header do painel adm ---------------------------------------- */
+
+#cabecalho_link_adm {
+    align-items: center;
+    background: var(--azul-roxo);
+    border-radius: 10px;
+    color: var(--branco);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0 3% 0 0;
+    text-decoration: none;
+    width: 100px;
+}
+/* cor do texto "Ola, nome do usuario" */
+
+.cabecalho__container__adm {
+    align-items: center;
+    background-color: var(--branco);
+    color: var(--azul-roxo);
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: var(--titulo);
+    height: 100px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.cabecalho__container__adm a {
+    color: var(--azul-roxo);
+}
+    
+
 
 
