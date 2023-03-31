@@ -21,20 +21,12 @@
     align-items: center;
     justify-content: center;
 }
-<<<<<<< HEAD
-/* alinhamento do conteudo dentro da janela azul */
-=======
-
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
 .janela_elementos{
     display: flex;
     flex-direction: column;
 }
-<<<<<<< HEAD
 /* estilo do conteudo da janela azul */
-=======
 
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
 .texto{
     font-family: var(--titulo);
     font-weight: bold;
@@ -42,31 +34,20 @@
     color: var(--branco);
     font-size: 20px;
 }
-<<<<<<< HEAD
 /* medidas do icone adm */
-=======
 
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
 .icone_adm{
     width: 226px;
     height: 226px;
     margin-bottom: 20px;
     align-items: center;
 }
-<<<<<<< HEAD
-/* medidas e estilo do botão novo usuário */
-#btn_novo_usuario{
-    width: 250px;
-    font-family: var(--titulo);
-    font-size: 20px;
-=======
 
 .btn_novo_usuario{
     width: 250px;
     font-family: var(--titulo);
     font-size: 20px;
     color: var(--branco);
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     background-color: #85D7DF;
@@ -74,15 +55,12 @@
     margin-top: 30px;
     font-weight: bold;
 }
-<<<<<<< HEAD
 /* retirando sublinhado do link */
 a{
     text-decoration: none;
     color: var(--branco);
 }
 /* medidas e estilo do botão logout */
-=======
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
 .btn_logout{
     width: 250px;
     font-family: var(--titulo);
@@ -95,8 +73,4 @@ a{
     border-color:var(--branco);
     font-weight: bold;
     margin-top: 100px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7a2ec1effa92848d01c0a2daf823b7565ea2f5f9
