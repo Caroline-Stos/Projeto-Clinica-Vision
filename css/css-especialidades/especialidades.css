@@ -57,6 +57,7 @@ scan{
     padding: 10px 20px 10px 20px;
     border-radius: 35px;
     border:none;
+    font-weight: 700;
     background-color: var(--verde);
     position: relative;
     top: 26px;
@@ -125,6 +126,7 @@ scan{
     padding: 10px 20px 10px 20px;
     border-radius: 35px;
     border:none;
+    font-weight: 700;
     background-color: var(--verde);
     position: relative;
     top: 26px;

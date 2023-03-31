@@ -1,0 +1,30 @@
+/* Fonte e margem do titulo "equipe medica" */
+.titulo_pg{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: var(--branco);
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+}
+/* container que possui o banner de bg, está sendo utilizado para alinhar o elemento titulo que esta dentro dele */
+.titulo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+/* faixa branca atras do titulo */
+.fundo_titulo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 100px;
+    background-color: var(--azul-medio);
+    border-radius: 30px;
+
+}
