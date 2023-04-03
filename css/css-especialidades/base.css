@@ -20,7 +20,7 @@
   }
   
   body {
-    background-color: var(--bg); /* É assim ue chama as cores e as fontes */
+    background-color: var(--bg); /* É assim que chama as cores e as fontes */
     width: 100%;
   }
   

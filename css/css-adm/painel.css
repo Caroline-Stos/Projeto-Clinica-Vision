@@ -1,0 +1,174 @@
+/* background */
+body{
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: 500px;
+}
+/* tamanho da faixa listrada */
+.faixa_listrada {
+    width: 100%;
+    height: 100px;
+}
+/* layout da pagina */
+.container_grid {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 730px;
+    padding: 0px 50px 0px 0px;
+
+    display: grid;
+    grid-template-areas: 
+    "janela_azul subtitulo subtitulo subtitulo"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado";
+    grid-gap: 5%;
+}
+
+/* responsividade */
+@media (max-width: 980px) {
+    .container_grid {
+        
+        grid-template-areas: 
+        "janela_azul subtitulo subtitulo"
+        "janela_azul btn_quadrado btn_quadrado"
+        "janela_azul btn_quadrado btn_quadrado";
+        grid-gap: 0px 30px;
+    }
+}
+@media (max-width: 800px) {
+    .container_grid {
+        justify-content: center;
+        grid-template-areas: 
+        "janela_azul"
+        "subtitulo"
+        "btn_quadrado"
+        "btn_quadrado"
+        "btn_quadrado"
+        "btn_quadrado";
+        grid-gap: 5%;
+        
+    }
+
+    .janela_azul{
+        width: 100%;
+        height: 150px;
+        border-radius: 0px 0px 70px 70px;
+    }
+}
+/* estilo e posicionamento da janela azul */
+.janela_azul{
+    max-width: 450px;
+    min-width: 350px;
+    height: 680px;
+    margin-top: -3px; /* faixa listrada esta com pequeno espaçamento entre a janela azul, por isso essa margem negativa */
+    background-color:var(--azul-escuro-light);
+    border-radius: 0px 0px 70px 0px;
+    grid-area: "janela_azul";
+    grid-row: janela_azul;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* alinhamento dos elementos dentro da janela azul */
+.janela_elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* estilo do texto administrador(a) */
+.janela_elementos h1 {
+    font-family: var(--titulo);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* responsividade das imagens */
+img { 
+    width: 100%;
+}
+
+/* tamanho do icone adm */
+.icone_adm {
+    max-width: 226px;
+    min-width: 160px;
+    height: 226px;
+    padding-bottom: 20px;
+}
+
+/* estilo do botao a esquerda - novo usuario */
+.btn_novo_usuario{
+    width: 250px;
+    font-family: var(--titulo);
+    font-size: 20px;
+    color: var(--azul-escuro);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background-color: var(--branco);
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* subtitulo "oq voce deseja acessar? */
+.subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: "subtitulo";
+    grid-column: subtitulo;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+/* tamanho dos quadrados dos botoes */
+.btn_quadrado {
+    max-width: 230px;
+    min-width: 180px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: "btn_quadrado";
+
+    background-color: var(--branco);
+    border-radius: 20px;
+    border: 2px solid;
+    margin-top: -20px;
+    border-color: var(--preto);
+}
+
+/* tamanho dos icones dos botoes */
+.btn_quadrado img {
+    width: 120px;
+    height: 120px;
+}
+
+/* estilo do texto dentro dos botoes */
+h1{
+    font-family: var(--titulo);
+    color: var(--preto);
+    font-weight:600;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* alterando cor e tananho do menu suspenso */
+#categoria{
+    width: 200px;
+    background-color: var(--branco);
+}
+
+/* retirando sublinhado do link */
+a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+
+

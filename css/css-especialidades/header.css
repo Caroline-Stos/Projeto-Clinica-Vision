@@ -14,7 +14,6 @@
 
 .faixa p {
     color: var(--branco);
-    margin: 0 5.5%;
 }
 
 .faixa a {
@@ -160,7 +159,8 @@
 }
 
 /* --------------------------------- header do painel adm ---------------------------------------- */
-/* estilo dos botoes "voltar" e "logout" */
+
+/* estilo dos botoes "voltar" e "logout" - mesmas propriedades do cabecalho__link__login */
 #cabecalho_link_adm {
     align-items: center;
     background: var(--azul-roxo);
@@ -174,10 +174,12 @@
     width: 100px;
 }
 
-/* cor do texto "Ola, nome do usuario" */
-.cabecalho__container a {
+/* espaçamento do telefone na faixa azul, seguindo o espaçamento da pagina principal de 5.5% */
+#faixa_adm {
+    margin: 0 5.5%;
+}
+/* cor do texto "Ola!"Nome do usuário"" */
+#menu__link__usuario {
     color: var(--azul-roxo);
 }
-
-
 

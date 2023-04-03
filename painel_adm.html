@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/css-especialidades/header.css">
     <link rel="stylesheet" href="css/css-especialidades/base.css">
     <link rel="stylesheet" href="css/css-especialidades/reset.css">
-    <link rel="stylesheet" href="css/css-painel_adm/janela_azul.css">
-    <link rel="stylesheet" href="css/css-painel_adm/botoes_adm.css">
+    <link rel="stylesheet" href="js/sidebar.js">
+    <link rel="stylesheet" href="css/css-adm/painel.css">
 
     <title>Clinica Vision</title>
 </head>
@@ -18,42 +18,51 @@
 <header>
 
     <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
-        <p>(11) 3275-3530</p>
-        <!-- <a href="#" target="_blank">Agende sua consulta </a> -- Este link está em formato de botão -->
+        <p id="faixa_adm">(11) 3275-3530</p>
+        <!--  <a href="#" target="_blank">Agende sua consulta </a> Este link está em formato de botão -->
     </div>
 
     <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
         <img class="logo__cabecalho" src="img/img-especialidades/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
-    
-        <a href="#" id="menu__link__usuario">Olá! "Nome-do-usuário"</a>
 
-        <div>  
-            <ul class="cabecalho__menu__lista">
-                <li><a id="cabecalho_link_adm" href="#">VOLTAR</a></li>
-                <li><a id="cabecalho_link_adm" href="login.html">LOGOUT</a></li>
-            </ul>
+            <a href="#" id="menu__link__usuario">Olá! "Nome-do-usuário"</a>
+
+                <nav id="mostrarMenu" class="cabecalho__menu">
+                    <ul class="cabecalho__menu__lista">
+                       <li><a id="cabecalho_link_adm" href="#">VOLTAR</a></li>
+                       <li><a id="cabecalho_link_adm" href="login.html">LOGOUT</a></li>
+                    </ul>
+                </nav>
+             
+        <div onclick="mostrarMenu()" class="mobile-menu-amburguer">
+            <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-
+    
     </div>
 
 </header>
+
 <body>
+
+    <!--faixa ilustrada abaixo do cabecalho-->
+    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.png" alt="faixa-listrada">
 
 <main>
 
-<section class="alinhamento_faixa_janela">
+<section class="container_grid"> <!--container resp. layout da pagina-->
 
-    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.png" alt="faixa-listrada">
-
-    <div class="janela_azul">
+    <div class="janela_azul"><!--janela azul-->
 
         <div class="janela_elementos">
 
             <img class="icone_adm" src="img/img-painel_adm/icone_adm.png" alt="icone-administrador">
 
-            <div class="texto">Administrador(a)</div>
+            <h1>Administrador(a)</h1>
 
-            <div class="btn_novo_usuario"> <!--container do menu do botao novo usuario-->
+            <div class="btn_novo_usuario"> <!--container menu novo usuario-->
                 <label>+ Criar novo usuário</label>
                 <select name="categoria" id="categoria">
                     <option value="Paciente">Paciente</option>
@@ -65,33 +74,33 @@
 
     </div>
 
-</section>
+    <div class="subtitulo"> 
+        <p>O QUE VOCÊ DESEJA ACESSAR?</p>
+    </div>
 
-<section class="container_botoes"><!--container contendo os 4 botoes brancos quadrados-->
-
-    <div>
-        <a href="#" class="btn_quadrado">
+    <div class="btn_quadrado"> <!--botoes-->
+        <a href="#">
             <img src="img/img-painel_adm/icone_clinica.png" alt="icone clinica">
             <h1>Dados da Clínica</h1>
         </a>
     </div>
 
-    <div>
-        <a href="#" class="btn_quadrado">
+    <div class="btn_quadrado"> <!--botoes-->
+        <a href="#">
             <img src="img/img-painel_adm/icone_agendamento.png" alt="icone agendamento">
             <h1>Consultar<br>agendamentos</h1>
         </a>
     </div>
 
-    <div>
-        <a href="#" class="btn_quadrado">
+    <div class="btn_quadrado"> <!--botoes-->
+        <a href="#">
             <img src="img/img-painel_adm/icone_paciente.png" alt="icone paciente">
             <h1>Pacientes</h1>
         </a>
     </div>
 
-    <div>
-        <a href="#" class="btn_quadrado">
+    <div class="btn_quadrado"> <!--botoes-->
+        <a href="#">
             <img src="img/img-painel_adm/icone_funcionario.png" alt="icone funcionario">
             <h1>Funcionários</h1>
         </a>
@@ -100,6 +109,8 @@
 </section>
 
 </main>
+
+<script src="js/sidebar.js"></script>
 
 </body>
 </html>
