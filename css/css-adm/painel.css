@@ -13,7 +13,7 @@ body{
 .container_grid {
     margin: 0 auto;
     max-width: 100%;
-    height: 730px;
+    height:fit-content;
     padding: 0px 50px 0px 0px;
 
     display: grid;
@@ -25,7 +25,7 @@ body{
 }
 
 /* responsividade */
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
     .container_grid {
         
         grid-template-areas: 
@@ -35,25 +35,29 @@ body{
         grid-gap: 0px 30px;
     }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .container_grid {
         justify-content: center;
+        justify-content: space-evenly;
+        padding: 0;
         grid-template-areas: 
-        "janela_azul"
-        "subtitulo"
-        "btn_quadrado"
-        "btn_quadrado"
-        "btn_quadrado"
-        "btn_quadrado";
+        "janela_azul janela_azul"
+        "subtitulo subtitulo"
+        "btn_quadrado btn_quadrado"
+        "btn_quadrado btn_quadrado";
         grid-gap: 5%;
-        
+    }
+
+    .btn_quadrado{
+        width: 230px;
+        height: 230px;
     }
 
     .janela_azul{
-        width: 100%;
-        height: 150px;
-        border-radius: 0px 0px 70px 70px;
+        grid-column: 1/3;
+        grid-row: 1/3;
     }
+
 }
 /* estilo e posicionamento da janela azul */
 .janela_azul{
