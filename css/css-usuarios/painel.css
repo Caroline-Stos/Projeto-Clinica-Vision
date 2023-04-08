@@ -133,6 +133,10 @@ img {
     width: 120px;
     height: 120px;
 }
+/* usado para centralizar o icone de agendamento que estava disproporcional */
+#centralize {
+    margin-left: 10px;
+}
 
 /* estilo do texto dentro dos botoes */
 h1{
