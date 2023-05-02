@@ -147,7 +147,7 @@ h1{
     text-align: center;
 }
 
-/* alterando cor e tananho do menu suspenso */
+/* alterando cor e taManho do menu suspenso */
 #categoria{
     width: 200px;
     background-color: var(--branco);
@@ -158,4 +158,33 @@ a{
     text-decoration: none;
     color: var(--branco);
 }
+
+/* ------------------------------------------- painel - pg paciente ---------------------- */
+/* estilo dos botoes à esquerda, dentro da janela azul*/
+.btn_quadrado_pac{
+    max-width: 380px;
+    min-width: 290px;    
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--branco);
+    border: 2px solid var(--preto);
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+}
+/* tamanho dos icones dentro do botao*/
+.btn_quadrado_pac img{
+    width: 90px;
+    height: 90px;
+    padding-right: 5px;
+}
+/* alinhamento dos icones + h1 dos botoes dentro da janela azul*/
+.btn_quadrado_pac a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+};
 
