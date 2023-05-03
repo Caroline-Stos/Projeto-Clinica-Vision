@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,24 +53,24 @@
 
     <main>
 
-        <section class="container_grid"> <!--container resp. layout da pagina-->
+        <section class="container_grid_paciente"> <!--container resp. layout da pagina-->
 
             <div class="janela_azul"><!--janela azul-->
 
                 <div class="janela_elementos"><!--alinhando elementos abaixo dentro da janela-->
 
-                    <img class="icone_usuario" src="img/img-painel_paciente/img_paciente.png" alt="icone-paciente">
+                    <img class="icone_usuario" src="img/img-painel_paciente/img_paciente.png" alt="ícone-paciente">
 
                     <div class="btn_quadrado_pac"> <!--botoes-->
                         <a href="#">
-                            <img id="centralize" src="img/img-painel_atend/img-calendario.png" alt="icone agendamento">
+                            <img id="centralize" src="img/img-painel_atend/img-calendario.png" alt="ícone-agendamento">
                             <h1>NOVO<br>AGENDAMENTO</h1>
                         </a>
                     </div>
 
                     <div class="btn_quadrado_pac"> <!--botoes-->
                         <a href="#">
-                            <img id="centralize" src="img/img-painel_paciente/img_paciente.png" alt="icone agendamento">
+                            <img id="centralize" src="img/img-painel_paciente/img_paciente.png" alt="ícone-agendamento">
                             <h1>MEUS DADOS</h1>
                         </a>
                     </div>
@@ -82,13 +83,36 @@
                 <p>AGENDAMENTOS</p>
             </div>
 
-            
+            <div class="section_principal">
 
-            
+                <h2 class="texto">Agendamentos futuros</h2>
 
-        
+                <div class="btn_agendamentos_futuros">
+                    
+                    <div class="linha_interna">
+                        <p id=>Segmento anterior</p>
+                        <p id="data">xx/xx/xxxx</p>
+                        <p id="horario">00:00</p>
+                    </div>
+                    <img class="icones_menores" src="img/img-painel_paciente/img_icone_excluir.svg" alt="ícone-excluir">
+                </div>
 
+                <div class="historico_consulta">
+
+                    <div class="bg_botao">
+                        <p id=>Segmento anterior</p>
+                        <p id="data">xx/xx/xxxx</p>
+                        <p id="horario">00:00</p>
+                        <img class="icones_menores" src="img/img-painel_paciente/img_icone_laudo.svg" alt="ícone-laudo-médico">
+                    </div>
+
+                </div>
+
+            </div>
         </section>
-    
+
+        <script src="js/sidebar.js"></script>
+
 </body>
+
 </html>

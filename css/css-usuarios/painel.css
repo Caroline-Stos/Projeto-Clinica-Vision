@@ -160,8 +160,29 @@ a{
 }
 
 /* ------------------------------------------- painel - pg paciente ---------------------- */
+/* Aplicando display grid na pagina e definindo duas colunas, com duas linhas;*/
+.container_grid_paciente {
+    margin: 0 auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0px 50px 0px 0px;
+
+    display: grid;
+    grid-template-columns: 450px auto;
+    grid-template-rows: 15% auto;
+    grid-template-areas: 
+    "janela_azul subtitulo"
+    "janela_azul section_principal";
+    grid-gap: 5%;
+}
+
+/* definindo a area de dos botoes */
+.section_principal {
+    grid-area: "section_principal";
+}
+
 /* estilo dos botoes à esquerda, dentro da janela azul*/
-.btn_quadrado_pac{
+.btn_quadrado_pac {
     max-width: 380px;
     min-width: 290px;    
     height: 140px;
@@ -186,5 +207,66 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-};
+}
+/* estilo e alinhamento do botao de do "segmento anterior" */
+.btn_agendamentos_futuros {
+    max-width: 800px;
+    height: 82px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+    background-color: var(--branco);
+}
+/* estilo da linha interna do botao do "segmento anterior" */
+.linha_interna{
+    width: 700px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 1px solid var(--preto);
+    border-radius: 15px;
+    margin-right: 20px;
+}
+/* aplicando fonte "texto" */
+.linha_interna p{
+    font-family: var(--texto);
+}
+/* botão excluir (vermelho) */
+.icones_menores{
+    width: 30px;
+}
+/* subtitulo acima do botao */
+.section_principal h2{
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+/* estilo botao historico de consultas */
+.historico_consulta {
+    max-width: 800px;
+    height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+    background-color: var(--branco);
+}
+.bg_botao{
+    width: 700px;
+    height: 45px;
+
+    border: 1px solid var(--preto);
+    border-radius: 15px;
+    background-color: var(--branco);
+}
