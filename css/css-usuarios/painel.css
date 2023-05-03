@@ -126,6 +126,7 @@ img {
     border: 2px solid;
     margin-top: -20px;
     border-color: var(--preto);
+    box-shadow: 0 4px 4px #666;
 }
 
 /* tamanho dos icones dos botoes */
@@ -158,6 +159,37 @@ a{
     text-decoration: none;
     color: var(--branco);
 }
+/* ------------------------------------------- painel - pg medico ---------------------- */
+.container_grid_atend {
+    margin: 0 auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0px 50px 0px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 30% auto;
+    grid-template-areas: 
+    "janela_azul subtitulo subtitulo subtitulo"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado";
+    grid-gap: 5%;
+}
+
+/* ------------------------------------------- painel - pg medico ---------------------- */
+.container_grid_medico {
+    margin: 0 auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0px 50px 0px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 30% auto;
+    grid-template-areas: 
+    "janela_azul subtitulo subtitulo subtitulo"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado";
+    grid-gap: 5%;
+}
 
 /* ------------------------------------------- painel - pg paciente ---------------------- */
 /* Aplicando display grid na pagina e definindo duas colunas, com duas linhas;*/
@@ -175,7 +207,6 @@ a{
     "janela_azul section_principal";
     grid-gap: 0% 5%;
 }
-
 /* definindo a area de dos botoes */
 .section_principal {
     grid-area: "section_principal";
@@ -198,6 +229,7 @@ a{
     border: 2px solid var(--preto);
     border-radius: 20px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 4px var(--preto);
 }
 /* tamanho dos icones dentro do botao*/
 .btn_quadrado_pac img{
@@ -224,6 +256,7 @@ a{
     border: 2px solid var(--preto);
     border-radius: 15px;
     background-color: var(--branco);
+    box-shadow: 0 4px 4px #666;
 }
 /* estilo da linha interna do botao do "segmento anterior" */
 .linha_interna{
@@ -262,6 +295,7 @@ a{
     border: 2px solid var(--preto);
     border-radius: 15px;
     background-color: var(--branco);
+    box-shadow: 0 4px 4px #666;
 }
 /* estilo dos botoes dentro do historico de consultas */
 .bg_botao{
