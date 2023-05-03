@@ -169,16 +169,20 @@ a{
 
     display: grid;
     grid-template-columns: 450px auto;
-    grid-template-rows: 15% auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "janela_azul subtitulo"
     "janela_azul section_principal";
-    grid-gap: 5%;
+    grid-gap: 0% 5%;
 }
 
 /* definindo a area de dos botoes */
 .section_principal {
     grid-area: "section_principal";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 600;
 }
 
 /* estilo dos botoes à esquerda, dentro da janela azul*/
@@ -193,7 +197,6 @@ a{
     background-color: var(--branco);
     border: 2px solid var(--preto);
     border-radius: 20px;
-
     margin-bottom: 30px;
 }
 /* tamanho dos icones dentro do botao*/
@@ -216,6 +219,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-evenly;
 
     border: 2px solid var(--preto);
     border-radius: 15px;
@@ -225,6 +229,7 @@ a{
 .linha_interna{
     width: 700px;
     height: 45px;
+    font-family: var(--texto);
 
     display: flex;
     align-items: center;
@@ -232,11 +237,6 @@ a{
 
     border: 1px solid var(--preto);
     border-radius: 15px;
-    margin-right: 20px;
-}
-/* aplicando fonte "texto" */
-.linha_interna p{
-    font-family: var(--texto);
 }
 /* botão excluir (vermelho) */
 .icones_menores{
@@ -245,7 +245,6 @@ a{
 /* subtitulo acima do botao */
 .section_principal h2{
     font-weight: 700;
-    margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
 }
@@ -257,16 +256,24 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     border: 2px solid var(--preto);
     border-radius: 15px;
     background-color: var(--branco);
 }
+/* estilo dos botoes dentro do historico de consultas */
 .bg_botao{
     width: 700px;
-    height: 45px;
+    height: 66px;
+    font-family: var(--texto);
 
-    border: 1px solid var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 1px solid var(--cinza);
     border-radius: 15px;
-    background-color: var(--branco);
+    background-color: var(--cinza-claro);
 }
