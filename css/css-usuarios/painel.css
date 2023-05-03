@@ -9,8 +9,8 @@ body{
     width: 100%;
     height: 100px;
 }
-/* layout da pagina */
-.container_grid {
+/* layout da pagina adm */
+.container_grid_adm {
     margin: 0 auto;
     max-width: 100%;
     height: fit-content;
@@ -26,9 +26,9 @@ body{
     grid-gap: 5%;
 }
 
-/* responsividade max 980 e 800px */
+/* responsividade max 980 a 800px - pg adm*/
 @media screen and (max-width: 980px) {
-    .container_grid {
+    .container_grid_adm {
         grid-template-columns: auto auto auto;
         grid-template-areas: 
         "janela_azul subtitulo subtitulo"
@@ -42,7 +42,7 @@ body{
 .janela_azul{
     max-width: 450px;
     min-width: 350px;
-    height: 680px;
+    height: 650px;
     margin-top: -3px; /* faixa listrada esta com pequeno espaçamento entre a janela azul, por isso essa margem negativa */
     background-color:var(--azul-escuro-light);
     border-radius: 0px 0px 70px 0px;
