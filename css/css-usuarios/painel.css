@@ -271,11 +271,11 @@ a{
     border: 1px solid var(--preto);
     border-radius: 15px;
 }
-/* botão excluir (vermelho) */
+/* tam botão excluir (vermelho) */
 .icones_menores{
     width: 30px;
 }
-/* subtitulo acima do botao */
+/* subtitulo acima da linha */
 .section_principal h2{
     font-weight: 700;
     display: flex;
