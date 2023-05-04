@@ -1,0 +1,38 @@
+/* parametro para a pagina do alert */
+#janela_excluir {
+    display: none;
+    position: fixed;
+    z-index: 1;/* posicionamento da pagina sobre a principal painel_paciente */
+    left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);/* transparencia da pagina*/
+}
+/* estilo da janela alert */
+#elem_janela {
+	background-color: var(--branco);
+	margin: 15% auto;
+	padding: 20px;
+	border: 2px solid var(--preto);
+	width: 80%;
+	height: 380px;
+	border-radius: 15px;
+}
+/* estilo dos elementos dentro da janela alert */
+#elem_janela {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+/* cor do subtitulo */
+#elem_janela h1 {
+	color: #FF0000;
+}
+#elem_janela input {
+	width: 200px;
+	height: 40px;
+}
+
+

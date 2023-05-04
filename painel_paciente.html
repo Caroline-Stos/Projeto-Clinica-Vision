@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/css-especialidades/reset.css">
     <link rel="stylesheet" href="js/sidebar.js">
     <link rel="stylesheet" href="css/css-usuarios/painel.css">
+    <link rel="stylesheet" href="css/css-usuarios/alert_excluir_agd.css">
 
     <title>Nome-do-usuário/Clinica Vision</title>
 </head>
@@ -49,7 +50,7 @@
 <body>
 
     <!--faixa ilustrada abaixo do cabecalho-->
-    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.png" alt="faixa-listrada">
+    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.svg" alt="faixa-listrada">
 
     <main>
 
@@ -94,7 +95,27 @@
                         <p id="data">xx/xx/xxxx</p>
                         <p id="horario">00:00</p>
                     </div>
-                    <a href=""><img class="icones_menores" src="img/img-painel_paciente/img_icone_excluir.svg" alt="ícone-excluir" onclick="btn_excluir"></a>
+                    <!--botao de excluir agendamento, função que chama o alert para confirmação do usuário-->
+                    <button id="btn_excluir" onclick="btnExcluir()"><img class="icones_menores"
+                            src="img/img-painel_paciente/img_icone_excluir.svg" alt="ícone-excluir"></button>
+                </div>
+
+                <div id="janela_excluir">
+                    <div id="elem_janela">
+                        <span class="close">&times;</span>
+                        <h1 class="subtitulo">CANCELAR AGENDAMENTO</h1>
+                        <P>Especialidade:</P>
+                        <input type="text">
+                        <P>Paciente:</P>
+                        <input type="text">
+                        <P>Data:</P>
+                        <input type="text">
+                        <P>Hora:</P>
+                        <input type="text">
+                        <P>Médico(a) solicitado(a):</P>
+                        <input type="text">
+                        <button>Confirmar</button>
+                    </div>
                 </div>
 
                 <h2 class="texto">Histórico de consultas</h2>
@@ -131,6 +152,7 @@
         </section>
 
         <script src="js/sidebar.js"></script>
+        <script src="js/alert_excluir_agd.js"></script>
 
 </body>
 

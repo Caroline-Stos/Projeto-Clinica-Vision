@@ -282,6 +282,11 @@ a{
 .icones_menores{
     width: 30px;
 }
+/* removendo borda padrao do button */
+button{
+    border: none;
+    background-color: var(--branco);
+}
 /* subtitulo acima do botao */
 .section_principal h2{
     font-weight: 700;
