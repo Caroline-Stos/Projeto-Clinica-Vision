@@ -1,41 +1,18 @@
+/* CSS das páginas principais dos usuarios atendente, adm, medico e paciente */
+
+/* Configurações gerais*/
+
 /* background */
 body{
     background-color: var(--cinza-claro);
     width: 100%;
     height: 500px;
 }
+
 /* tamanho da faixa listrada */
 .faixa_listrada {
     width: 100%;
     height: 100px;
-}
-/* layout da pagina adm */
-.container_grid_adm {
-    margin: 0 auto;
-    max-width: 100%;
-    height: fit-content;
-    padding: 0px 50px 0px 0px;
-
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 15% auto auto;
-    grid-template-areas: 
-    "janela_azul subtitulo subtitulo subtitulo"
-    "janela_azul btn_quadrado btn_quadrado btn_quadrado"
-    "janela_azul btn_quadrado btn_quadrado btn_quadrado";
-    grid-gap: 5%;
-}
-
-/* responsividade max 980 a 800px - pg adm*/
-@media screen and (max-width: 980px) {
-    .container_grid_adm {
-        grid-template-columns: auto auto auto;
-        grid-template-areas: 
-        "janela_azul subtitulo subtitulo"
-        "janela_azul btn_quadrado btn_quadrado"
-        "janela_azul btn_quadrado btn_quadrado";
-        grid-gap: 0px 30px;
-    }
 }
 
 /* estilo e posicionamento da janela azul */
@@ -74,6 +51,34 @@ body{
 /* responsividade das imagens */
 img { 
     width: 100%;
+}
+/* -------------------------------------- painel - pg administrador ---------------------*/
+/* Aplicando display grid na pagina e definindo quatro colunas, com três linhas;*/
+.container_grid_adm {
+    margin: 0 auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0px 50px 0px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 15% auto auto;
+    grid-template-areas: 
+    "janela_azul subtitulo subtitulo subtitulo"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado"
+    "janela_azul btn_quadrado btn_quadrado btn_quadrado";
+    grid-gap: 5%;
+}
+/* responsividade max 980 a 800px - pg adm*/
+@media screen and (max-width: 980px) {
+    .container_grid_adm {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+        "janela_azul subtitulo subtitulo"
+        "janela_azul btn_quadrado btn_quadrado"
+        "janela_azul btn_quadrado btn_quadrado";
+        grid-gap: 0px 30px;
+    }
 }
 
 /* tamanho do icone adm */
@@ -148,7 +153,7 @@ h1{
     text-align: center;
 }
 
-/* alterando cor e taManho do menu suspenso */
+/* alterando cor e tamanho do menu suspenso */
 #categoria{
     width: 200px;
     background-color: var(--branco);
@@ -160,6 +165,7 @@ a{
     color: var(--branco);
 }
 /* ------------------------------------------- painel - pg medico ---------------------- */
+/* Aplicando display grid na pagina e definindo quatro colunas, com duas linhas;*/
 .container_grid_atend {
     margin: 0 auto;
     max-width: 100%;
@@ -176,6 +182,7 @@ a{
 }
 
 /* ------------------------------------------- painel - pg medico ---------------------- */
+/* Aplicando display grid na pagina e definindo quatro colunas, com duas linhas;*/
 .container_grid_medico {
     margin: 0 auto;
     max-width: 100%;
@@ -207,13 +214,13 @@ a{
     "janela_azul section_principal";
     grid-gap: 0% 5%;
 }
-/* definindo a area de dos botoes */
+/* definindo posição dos botoes centrais */
 .section_principal {
     grid-area: "section_principal";
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-weight: 600;
+    font-weight: 600; /*fonte em negrito*/
 }
 
 /* estilo dos botoes à esquerda, dentro da janela azul*/
@@ -271,11 +278,16 @@ a{
     border: 1px solid var(--preto);
     border-radius: 15px;
 }
-/* tam botão excluir (vermelho) */
+/* tam tam botão excluir (vermelho) */
 .icones_menores{
     width: 30px;
 }
-/* subtitulo acima da linha */
+/* removendo borda padrao do button */
+button{
+    border: none;
+    background-color: var(--branco);
+}
+/* subtitulo acima do botao */
 .section_principal h2{
     font-weight: 700;
     display: flex;
