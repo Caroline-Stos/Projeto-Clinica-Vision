@@ -283,7 +283,7 @@ a{
     width: 30px;
 }
 /* removendo borda padrao do button */
-button{
+button {
     border: none;
     background-color: var(--branco);
 }

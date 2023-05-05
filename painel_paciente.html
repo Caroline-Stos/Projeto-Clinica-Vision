@@ -88,39 +88,41 @@
 
                 <h2 class="texto">Agendamentos futuros</h2>
 
-                <div class="btn_agendamentos_futuros"> <!--botao agendamentos futuros-->
-
-                    <div class="linha_interna">
+                <div class="btn_agendamentos_futuros"> <!--linha com os agendamentos futuros-->
+                    <div class="linha_interna"><!--div para estilo-->
                         <p id=>Segmento anterior</p>
                         <p id="data">xx/xx/xxxx</p>
                         <p id="horario">00:00</p>
                     </div>
                     <!--botao de excluir agendamento, função que chama o alert para confirmação do usuário-->
-                    <button id="btn_excluir" onclick="btnExcluir()"><img class="icones_menores"
+                    <button id="btn_excluir" onclick="btnCancelar()"><img class="icones_menores"
                             src="img/img-painel_paciente/img_icone_excluir.svg" alt="ícone-excluir"></button>
                 </div>
 
-                <div id="janela_excluir">
-                    <div id="elem_janela">
-                        <div id="align_close">
-                            <span class="close">&times;</span>
+                <!--codigo do alert de confirmação para cancelar agendamento-->
+                <div id="janela_cancelar"> <!--janela maior-->
+                    <div class="elem_janela"> <!--container para alinhar o conteudo da janela-->
+                        <div class="align_close"> <!--div para alinhar primeira linha do titulo e botao de fechar janela-->
+                            <button id="btn_retornar" onclick="btnFechar()"><img src="img/img-painel_paciente/img_icone_excluir.svg" alt="icone-excluir"></button><!--<span>&times;</span>-->
                             <h1 class="subtitulo">CANCELAR AGENDAMENTO</h1>
                         </div>
-                        <div id="align_alert">
-                            <P>Especialidade:</P>
-                            <input type="text">
-                            <P>Paciente:</P>
-                            <input type="text">
+                        <div class="align_linha"><!--segunda linha com os inputs de especialidade e paciente-->
+                            <label for="especialidade">Especialidade:</label>
+                            <input id="input_ajuste" type="text" name="especialidade">
+                            <label for="paciente">Paciente:</label>
+                            <input id="input_ajuste" type="text" name="paciente">
                         </div>
-                        <div id="align_alert">
-                            <P>Data:</P>
-                            <input type="text">
-                            <P>Hora:</P>
-                            <input type="text">
-                            <P>Médico(a) solicitado(a):</P>
-                            <input type="text">
+                        <div class="align_linha"><!--terceira linha com os inputs restantes-->
+                            <label for="data">Data:</label>
+                            <input type="text" name="data">
+                            <label for="hora">Hora:</label>
+                            <input type="text" name="hora">
+                            <label for="medico">Médico(a)<br>solicitado(a):</label>
+                            <input type="text" name="medico">
                         </div>
-                        <button class="titulo" id="btn_confirmar">Confirmar</button>
+                        <div class="align_linha"><!--quarta linha com botao de confirmar-->
+                            <button id="btn_confirmar" onclick="confirmarCancelamento()">Confirmar</button><!--adicionar função de excluir-->
+                        </div>
                     </div>
                 </div>
 

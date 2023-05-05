@@ -1,5 +1,5 @@
 /* parametro para a pagina do alert */
-#janela_excluir {
+#janela_cancelar {
     display: none;
     position: fixed;
     z-index: 1;/* posicionamento da pagina sobre a principal painel_paciente */
@@ -11,7 +11,7 @@
 	background-color: rgba(0, 0, 0, 0.4);/* transparencia da pagina*/
 }
 /* estilo da janela alert */
-#elem_janela {
+.elem_janela {
 	background-color: var(--branco);
 	margin: 15% auto;
 	padding: 20px;
@@ -21,47 +21,69 @@
 	border-radius: 15px;
 }
 /* estilo dos elementos dentro da janela alert */
-#elem_janela {
+.elem_janela {
+	font-family: var(--texto);
+
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	justify-content: space-around;
 }
+/* posicionamento do titulo "cancelar agendamento" */
+.align_close {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+/* verificar o botao de fechar, alinhar para a direita */
+#retornar {
+	position: relative;
+	right: 0px;
+}
+
 /* cor do subtitulo */
-#elem_janela h1 {
-	color: #FF0000;
+.elem_janela h1 {
+	color: var(--vermelho);
 }
-#elem_janela input {
-	width: 200px;
-	height: 40px;
-	border-radius: 20px;
-	border: none;
-	background-color: var(--azul-claro);
-}
-/* alinhamento do conteudo do alert, separado por linhas */
-#align_alert{
+
+/* estilo e posicionamento da primeira e segunda linha de elementos especialidade, paciente, data, hora e medico */
+.align_linha {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 }
-/* posição do botão "close" */
-span{
-	display: flex;
-	flex-direction: row-reverse;
+
+/* estilo dos inputs */
+.elem_janela input {
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	background-color: var(--azul-claro);
 }
+
+/* aumentando os dois primeiros inputs da linha1*/
+#input_ajuste {
+	width: 300px;
+}
+
+/* estilo do botao confirmar (vermelho) */
 #btn_confirmar {
 	width: 170px;
 	height: 50px;
 
 	border-radius: 20px;
-	background-color: #FF0000 ;
+	background-color: var(--vermelho);
 	color: var(--branco);
+	font-family: var(--texto);
+	font-size: 20px;
 
-	display: flex;
-	justify-self: center;
-	align-self: center;
+	align-items: center;
+	justify-content: center;
 }
+
 
 
