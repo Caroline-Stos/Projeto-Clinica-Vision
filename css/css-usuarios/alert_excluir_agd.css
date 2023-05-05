@@ -80,10 +80,19 @@
 	color: var(--branco);
 	font-family: var(--texto);
 	font-size: 20px;
-
-	align-items: center;
-	justify-content: center;
 }
+
+#jn_confirmado {
+	display: none;
+	background-color: var(--branco);
+	margin: 15% auto;
+	padding: 20px;
+	border: 2px solid var(--preto);
+	width: 920px;
+	height: 380px;
+	border-radius: 15px;
+}
+
 
 
 

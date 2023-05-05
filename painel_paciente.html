@@ -102,6 +102,7 @@
                 <!--codigo do alert de confirmação para cancelar agendamento-->
                 <div id="janela_cancelar"> <!--janela maior-->
                     <div class="elem_janela"> <!--container para alinhar o conteudo da janela-->
+
                         <div class="align_close"> <!--div para alinhar primeira linha do titulo e botao de fechar janela-->
                             <button id="btn_retornar" onclick="btnFechar()"><img src="img/img-painel_paciente/img_icone_excluir.svg" alt="icone-excluir"></button><!--<span>&times;</span>-->
                             <h1 class="subtitulo">CANCELAR AGENDAMENTO</h1>
@@ -123,7 +124,14 @@
                         <div class="align_linha"><!--quarta linha com botao de confirmar-->
                             <button id="btn_confirmar" onclick="confirmarCancelamento()">Confirmar</button><!--adicionar função de excluir-->
                         </div>
+
                     </div>
+
+                </div>
+
+                <div id="jn_confirmado"><!--janela de confirmação de cancelamennto-->
+                    <img src="img/img-painel_paciente/img_icone_excluir.svg" alt="icone-excluir">
+                    <p>SUA CONSULTA FOI CANCELADA.</p>
                 </div>
 
                 <h2 class="texto">Histórico de consultas</h2>
@@ -163,5 +171,4 @@
         <script src="js/alert_excluir_agd.js"></script>
 
 </body>
-
 </html>

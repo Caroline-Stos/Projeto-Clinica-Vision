@@ -10,15 +10,20 @@ function btnFechar() {
     janelaCancelar.style.display = "none";
 }
 // função que ao clicar fora da janela fecha o alert
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == janelaCancelar) {
-       janelaCancelar.style.display = "none";
+        janelaCancelar.style.display = "none";
     }
-    }
-
-
-const btnConfirmar = document.getElementById("btn_confirmar");
-
-function confirmarCancelamento() {
-    
 }
+
+const alertConfirmado = document.getElementById("jn_confirmado");
+
+// função que ao clicar em confirmar fecha janela
+function confirmarCancelamento(janelaCancelar) {
+    janelaCancelar.style.display = "none";
+
+    if (janelaCancelar === "none" ) {
+        alertConfirmado.style.display = "block";
+    }
+}
+
