@@ -263,7 +263,7 @@ a{
     border: 2px solid var(--preto);
     border-radius: 15px;
     background-color: var(--branco);
-    box-shadow: 0 4px 4px #666;
+    box-shadow: 0 4px 4px var(--cinza-claro);
 }
 /* estilo da linha interna do botao do "segmento anterior" */
 .linha_interna{
@@ -278,7 +278,7 @@ a{
     border: 1px solid var(--preto);
     border-radius: 15px;
 }
-/* tam tam botão excluir (vermelho) */
+/* tam botão excluir (vermelho) */
 .icones_menores{
     width: 30px;
 }

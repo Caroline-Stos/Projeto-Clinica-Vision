@@ -6,7 +6,7 @@ function btnCancelar() {
     janelaCancelar.style.display = "block";
 }
 //função que ao clicar no botao vermelho o alert fecha
-function btnFechar() {
+function btnRetornar() {
     janelaCancelar.style.display = "none";
 }
 // função que ao clicar fora da janela fecha o alert
@@ -19,11 +19,9 @@ window.onclick = function (event) {
 const alertConfirmado = document.getElementById("jn_confirmado");
 
 // função que ao clicar em confirmar fecha janela
-function confirmarCancelamento(janelaCancelar) {
+function confirmarCancelamento() {
     janelaCancelar.style.display = "none";
-
-    if (janelaCancelar === "none" ) {
-        alertConfirmado.style.display = "block";
-    }
+    alertConfirmado.style.display = "block";
+   
 }
 

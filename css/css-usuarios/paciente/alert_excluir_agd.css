@@ -81,7 +81,7 @@
 	font-family: var(--texto);
 	font-size: 20px;
 }
-
+/* estilo do segundo alert, pós clicar no botao "confirmar" */
 #jn_confirmado {
 	display: none;
 	background-color: var(--branco);
