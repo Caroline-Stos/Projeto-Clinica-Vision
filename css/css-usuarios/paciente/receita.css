@@ -2,7 +2,6 @@ body{
     background-color: var(--cinza-claro);
     width: 100%;
     height: 500px;
-    margin: 50px;
 
     font-family: var(--texto);
     font-weight: 600;
@@ -10,7 +9,6 @@ body{
 /* tamanho da faixa listrada */
 .faixa_listrada {
     width: 100%;
-    height: 100px;
 }
 /*tam e negrito p/ titulo */
 #receita_t {
@@ -48,16 +46,53 @@ body{
     align-items: center;
 }
 /* tam e linhas da tabela */
-table {
+.tb_receita {
     width: 1154px;
     border: 2px solid var(--preto);
 }
 
+.linha_agrupada {
+    width: 100%;
+    height: 70px;
 
+    border: 2px solid var(--preto);
+    text-align: center;
+}
+
+td {
+    width: 1154px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* alinhamento do footer */
+.alinhamento_footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 /* estilo do retangulo p/ assinatura */
 .assinatura_med {
     width: 730px;
     height: 98px;
+    margin-left: 200px; /* margem adicionada para compensar a largura da div dos icones(200px) e centralizar o retangulo */
     
     display: flex;
     justify-content: center;
@@ -68,10 +103,14 @@ table {
 .assinatura_med h2 {
     padding-top: 10px;
 }
-/* tam do icone impressora e download */
+/* tam e posição do icone impressora e download */
 .icones-menores {
-    width: 46px;
+    max-width: 46px;
 }
-.align_footer {
+.icones_img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-}
