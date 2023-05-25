@@ -48,20 +48,25 @@ body{
 /* tam e linhas da tabela */
 .tb_receita {
     width: 1154px;
+}
+
+/* aplicando borda na tabela */
+table, th, td, tbody {
     border: 2px solid var(--preto);
 }
 
+/* linha agrupada da tabela */
 .linha_agrupada {
     width: 100%;
     height: 70px;
+
+    display: flex;
+    align-items: center;
 
     border: 2px solid var(--preto);
     text-align: center;
 }
 
-td {
-    width: 1154px;
-}
 
 
 
@@ -107,6 +112,7 @@ td {
 .icones-menores {
     max-width: 46px;
 }
+/* espaçamento entre os icones de impressora e dowload */
 .icones_img {
     width: 200px;
     display: flex;
