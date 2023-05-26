@@ -1,7 +1,7 @@
 body{
     background-color: var(--cinza-claro);
     width: 100%;
-    height: 500px;
+    height: 1000px;
 
     font-family: var(--texto);
     font-weight: 600;
@@ -46,44 +46,27 @@ body{
     align-items: center;
 }
 /* tam e linhas da tabela */
-.tb_receita {
+table {
     width: 1154px;
 }
-
-/* aplicando borda na tabela */
-table, th, td {
+/* definindo tamanhos das celulas e aplicando borda na tabela */
+table, tr, th, td {
+    height: 30px;
+    margin: 20px;
+    text-align: center;
     border: 2px solid var(--preto);
 }
 
-/* linha agrupada da tabela */
-.linha_agrupada {
+/*#linha_agrupada {
     width: 100%;
     height: 70px;
 
+    border: none;
+
     display: flex;
     align-items: center;
-
-    border: 2px solid var(--preto);
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    justify-content: center;
+}*/
 
 /* alinhamento do footer */
 .alinhamento_footer {
@@ -98,7 +81,7 @@ table, th, td {
     width: 730px;
     height: 98px;
     margin-left: 200px; /* margem adicionada para compensar a largura da div dos icones(200px) e centralizar o retangulo */
-    
+
     display: flex;
     justify-content: center;
 
