@@ -51,7 +51,7 @@ body{
 }
 
 /* aplicando borda na tabela */
-table, th, td, tbody {
+table, th, td {
     border: 2px solid var(--preto);
 }
 
