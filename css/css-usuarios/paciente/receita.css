@@ -1,3 +1,4 @@
+/* background, tam e fonte */
 body{
     background-color: var(--cinza-claro);
     width: 100%;
@@ -45,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* tam e linhas da tabela */
+/* tam da tabela */
 table {
     width: 1154px;
 }
@@ -56,18 +57,6 @@ table, tr, th, td {
     text-align: center;
     border: 2px solid var(--preto);
 }
-
-/*#linha_agrupada {
-    width: 100%;
-    height: 70px;
-
-    border: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-
 /* alinhamento do footer */
 .alinhamento_footer {
     width: 100%;
@@ -87,11 +76,11 @@ table, tr, th, td {
 
     border: 2px solid var(--preto);
 }
-/* padding do titulo "assinatura do medico" */
+/* padding superior do titulo "assinatura do medico" */
 .assinatura_med h2 {
     padding-top: 10px;
 }
-/* tam e posição do icone impressora e download */
+/* tam do icone impressora e download */
 .icones-menores {
     max-width: 46px;
 }
@@ -102,4 +91,3 @@ table, tr, th, td {
     align-items: center;
     justify-content: space-evenly;
 }
-
