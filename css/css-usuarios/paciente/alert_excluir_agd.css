@@ -34,12 +34,11 @@
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
-	align-items: center;
 }
-/* verificar o botao de fechar, alinhar para a direita */
-#retornar {
+/* alinhamento do botao "X" ao canto direito */
+.align_close button {
 	position: relative;
-	right: 0px;
+	left: 28%;
 }
 
 /* cor do subtitulo */
