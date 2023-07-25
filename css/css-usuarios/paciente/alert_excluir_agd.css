@@ -81,15 +81,26 @@
 	font-size: 20px;
 }
 /* estilo do segundo alert, pós clicar no botao "confirmar" */
-#jn_confirmado {
+#janela_confirmado {
 	display: none;
-	background-color: var(--branco);
-	margin: 15% auto;
-	padding: 20px;
-	border: 2px solid var(--preto);
-	width: 920px;
-	height: 380px;
-	border-radius: 15px;
+    position: fixed;
+    z-index: 1;/* posicionamento da pagina sobre a principal painel_paciente */
+    left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);/* transparencia da pagina*/
+}
+
+/* tamanho da img ´x´ vermelho */
+#janela_confirmado img {
+	width: 257px;
+	height: 257px;
+}
+/* alinhamento ao centro da img ´x´ */
+.elem_janela-self {
+	align-items: center;
 }
 
 
