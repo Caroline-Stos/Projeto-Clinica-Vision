@@ -2,7 +2,7 @@
 body{
     background-color: var(--cinza-claro);
     width: 100%;
-    height: 1000px;
+    height: 100%;
 
     font-family: var(--texto);
     font-weight: 600;
@@ -15,11 +15,12 @@ body{
 #receita_t {
     font-size: 30px;
     font-weight: 500;
+    margin: 30px;
 }
 /* container q alinha todos os elementos do section */
 .container_receita {
     width: 100%;
-    height: 650px;
+    height: 100%;
 
     display: flex;
     justify-items: center;
@@ -43,23 +44,27 @@ body{
     border-radius: 25px;
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 20px;
 }
+
 /* tam da tabela */
 table {
     width: 1154px;
 }
 /* definindo tamanhos das celulas e aplicando borda na tabela */
 table, tr, th, td {
-    height: 30px;
+    height: 40px;
     margin: 20px;
     text-align: center;
     border: 2px solid var(--preto);
 }
+
 /* alinhamento do footer */
 .alinhamento_footer {
     width: 100%;
+    margin-bottom: 30px;
 
     display: flex;
     justify-content: center;
@@ -70,7 +75,7 @@ table, tr, th, td {
     width: 730px;
     height: 98px;
     margin-left: 200px; /* margem adicionada para compensar a largura da div dos icones(200px) e centralizar o retangulo */
-
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 
