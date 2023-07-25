@@ -163,7 +163,7 @@ a{
     text-decoration: none;
     color: var(--branco);
 }
-/* ------------------------------------------- painel - pg medico ---------------------- */
+/* ------------------------------------------- painel - pg atendente ---------------------- */
 /* Aplicando display grid na pagina e definindo quatro colunas, com duas linhas;*/
 .container_grid_atend {
     margin: 0 auto;
