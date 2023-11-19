@@ -1,0 +1,70 @@
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--texto);
+}
+
+#prescription__t {
+    margin: 2rem;
+    padding-top: 1rem; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table, th, td {
+    background-color: var(--cinza-claro);
+    border: 2px solid var(--preto);
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 80%;
+    table-layout: fixed;
+}
+
+#name, #birth, #dr__name, #date__prescription {
+    text-align: center;
+    font-weight: 500;
+}
+
+#far, #close, #dados, #signature, h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.signature__space {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.signature {
+    width: 70%; /* Use a porcentagem desejada */
+    max-width: 600px; /* Adicione uma largura máxima opcional para evitar que o elemento se expanda indefinidamente em telas maiores */
+    position: relative;
+    height: 90px;
+    border: 2px solid var(--preto);
+    padding-top: 1rem;
+}
+
+.icon_img {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#small_icons {
+    width: 45px;
+    padding: 1rem;
+}
+
+#small_icons:hover {
+    width: 50px;
+    padding: 1rem;
+    
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 200ms;
+}

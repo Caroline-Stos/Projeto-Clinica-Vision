@@ -6,138 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Receita Clínica Vision</title>
+
     <link rel="stylesheet" href="css/css-especialidades/header.css">
     <link rel="stylesheet" href="css/css-especialidades/base.css">
     <link rel="stylesheet" href="css/css-especialidades/reset.css">
-    <link rel="stylesheet" href="js/sidebar.js">
-    <link rel="stylesheet" href="css/css-usuarios/paciente/receita.css">
+    <link rel="stylesheet" href="/js/sidebar.js">
+    <link rel="stylesheet" href="css/css-usuarios/painel.css">
+    <link rel="stylesheet" href="css/css-usuarios/paciente/alert_excluir_agd.css">
+    <link rel="stylesheet" href="/receita.css">
 
-    <title>Receita - "nome-do-usuário"</title>
 </head>
 
-<header>
-
-    <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
-        <p id="faixa_adm">(11) 3275-3530</p>
-        <!--  <a href="#" target="_blank">Agende sua consulta </a> Este link está em formato de botão -->
-    </div>
-
-    <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
-        <img class="logo__cabecalho" src="img/img-especialidades/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
-
-        <a href="#" id="menu__link__usuario">Olá! "Nome-do-usuário"</a>
-
-        <nav id="mostrarMenu" class="cabecalho__menu">
-            <ul class="cabecalho__menu__lista">
-                <li><a id="cabecalho_link_adm" href="#">VOLTAR</a></li>
-                <li><a id="cabecalho_link_adm" href="login.html">LOGOUT</a></li>
-            </ul>
-        </nav>
-
-        <div onclick="mostrarMenu()" class="mobile-menu-amburguer">
-            <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-
-    </div>
-
-</header>
-
 <body>
+    <header>
 
-    <!--faixa ilustrada abaixo do cabecalho-->
-    <img class="faixa_listrada" src="img/img-painel_adm/faixa_listrada.svg" alt="faixa-listrada">
-
-    <section class="container_receita"><!--container p/ fins de alinhamento-->
-
-        <div class="titulo" id="receita_t">RECEITA MÉDICA</div>
-
-        <!--input contendo nome do paciente e data de nasc.-->
-        <div class="linha_input">
-            <div class="estilo_input" id="nome-pac">
-                <h2>Nome do paciente:</h2>
-            </div>
-
-            <div class="estilo_input" id="data-nasc">
-                <h2>Data de nascimento:</h2>
-            </div>
+        <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
+            <p id="faixa_adm">(11) 3275-3530</p>
+            <!--  <a href="#" target="_blank">Agende sua consulta </a> Este link está em formato de botão -->
         </div>
+    
+        <div class="cabecalho__container"> <!-- Este cabeçalho é aquela parte com bg branco e o menu com os links -->
+            <img class="logo__cabecalho" src="img/img-especialidades/logo-escuro.svg" alt="Logotipo da Clínica Vision.">
+    
+            <a href="#" id="menu__link__usuario">Olá! "Nome-do-usuário"</a>
+    
+            <nav id="mostrarMenu" class="cabecalho__menu">
+                <ul class="cabecalho__menu__lista">
+                    <li><a id="cabecalho_link_adm" href="#">VOLTAR</a></li>
+                    <li><a id="cabecalho_link_adm" href="login.html">LOGOUT</a></li>
+                </ul>
+            </nav>
+    
+            <div onclick="mostrarMenu()" class="mobile-menu-amburguer">
+                <!-- Este menu amburguer só aparece no responsivo. A função está no path:assets/js/sideBar.js -->
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+    
+        </div>
+    
+    </header>
 
-        <!--Tabela que retorna os valores preenchidos pelo medico durante a consulta-->
-        <table title="tabela de resultado da consulta">
+    <main>
+        <div class="faixa_listrada"></div>
 
+        <div class="titulo" id="prescription__t">RECEITA MÉDICA</div>
+
+        <table id="dados"> <!--primeira tabela nome e data de nascimento-->
             <thead>
                 <tr>
-                    <th colspan="5">Longe</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>Esfera</th>
-                    <th>Cílindro</th>
-                    <th>Eixo</th>
-                    <th>D.P</th>
+                    <th>Nome do paciente</th>
+                    <th>Data de nascimento</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
-                    <td>OD</td>
-                </tr>
-                <tr>
-                    <td>OE</td>
-                </tr>
-            </tbody>
-
-            <thead>
-                <tr>
-                    <th colspan="5">Perto</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>Esfera</th>
-                    <th>Cílindro</th>
-                    <th>Eixo</th>
-                    <th>D.P</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>OD</td>
-                </tr>
-                <tr>
-                    <td>OE</td>
+                    <td id="name">Caroline</td>
+                    <td id="birth">10/02/1998</td>
                 </tr>
             </tbody>
         </table>
 
-        <!--Input contendo nome do medico e data da consulta-->
-        <div class="linha_input">
-            <div class="estilo_input" id="nome-medico">
-                <h2>Nome do médico:</h2>
-            </div>
+        <table id="far"> <!--segunda tabela da receita-->
+            <thead>
+                <tr>
+                    <th colspan="5">Longe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Esférico</td>
+                    <td>Cilindro</td>
+                    <td>Eixo</td>
+                    <td>D.P</td>
+                </tr>
+                <tr>
+                    <td>OE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="subtitle">OE</td>
 
-            <div class="estilo_input" id="data-receita">
-                <h2>Data da receita:</h2>
-            </div>
-        </div>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="close">
+            <thead>
+                <tr>
+                    <th colspan="5">Perto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Esférico</td>
+                    <td>Cilindro</td>
+                    <td>Eixo</td>
+                    <td>D.P</td>
+                </tr>
+                <tr>
+                    <td>OD</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="subtitle">OE</td>
+
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+        <table id="dados"> <!--primeira tabela nome e data de nascimento-->
+            <thead>
+                <tr>
+                    <th>Nome do médico</th>
+                    <th>Data da receita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="dr__name">Dr. Andreia</td>
+                    <td id="date__prescription">19/11/2023</td>
+                </tr>
+            </tbody>
+        </table>
 
         <!--retangulo p/ assinatura do medico responsável-->
-        <div class="alinhamento_footer">
-            <div class="assinatura_med">
+        <div class="signature__space">
+
+            <div class="signature">
                 <h2>Assinatura do médico(a)</h2>
-                <div id="assinatura"></div>
+                <div href="#"></div>
             </div>
 
-            <div class="icones_img">
-                <img class="icones-menores" src="img/img-painel_paciente/impressora.png" alt="icone-impressora">
-                <img class="icones-menores" src="img/img-painel_paciente/download.png" alt="icone-download">
+            <div class="icon_img">
+                <img id="small_icons" src="img/img-painel_paciente/impressora.png" alt="icone-impressora">
+                <img id="small_icons" src="img/img-painel_paciente/download.png" alt="icone-download">
             </div>
+
         </div>
 
-    </section>
+    </main>
 
 </body>
 
