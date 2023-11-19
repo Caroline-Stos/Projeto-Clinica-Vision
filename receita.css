@@ -1,3 +1,7 @@
+body {
+    background-color: var(--branco);
+}
+
 main {
     align-items: center;
     display: flex;
@@ -13,12 +17,16 @@ main {
 }
 
 table, th, td {
-    background-color: var(--cinza-claro);
+    background-color: var(--branco);
     border: 2px solid var(--preto);
     margin: 2rem 0;
     padding: 1rem;
     width: 80%;
     table-layout: fixed;
+}
+
+.bg_cinza {
+    background-color: var(--cinza-claro);
 }
 
 #name, #birth, #dr__name, #date__prescription {
@@ -41,8 +49,8 @@ table, th, td {
 }
 
 .signature {
-    width: 70%; /* Use a porcentagem desejada */
-    max-width: 600px; /* Adicione uma largura máxima opcional para evitar que o elemento se expanda indefinidamente em telas maiores */
+    width: 70%; 
+    max-width: 600px; 
     position: relative;
     height: 90px;
     border: 2px solid var(--preto);

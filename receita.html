@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/css-especialidades/header.css">
     <link rel="stylesheet" href="css/css-especialidades/base.css">
     <link rel="stylesheet" href="css/css-especialidades/reset.css">
-    <link rel="stylesheet" href="js/sidebar.js">
+    <link rel="stylesheet" href="/js/sidebar.js">
     <link rel="stylesheet" href="css/css-usuarios/painel.css">
     <link rel="stylesheet" href="css/css-usuarios/paciente/alert_excluir_agd.css">
     <link rel="stylesheet" href="/receita.css">
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <header>
 
         <div class="faixa"> <!--Esta faixa fica em cima do menu na parte superior-->
@@ -57,8 +58,8 @@
         <table id="dados"> <!--primeira tabela nome e data de nascimento-->
             <thead>
                 <tr>
-                    <th>Nome do paciente</th>
-                    <th>Data de nascimento</th>
+                    <th class="bg_cinza">Nome do paciente</th>
+                    <th class="bg_cinza">Data de nascimento</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,7 +73,7 @@
         <table id="far"> <!--segunda tabela da receita-->
             <thead>
                 <tr>
-                    <th colspan="5">Longe</th>
+                    <th colspan="5" class="bg_cinza">Longe</th>
                 </tr>
             </thead>
             <tbody>
@@ -105,7 +106,7 @@
         <table id="close">
             <thead>
                 <tr>
-                    <th colspan="5">Perto</th>
+                    <th colspan="5" class="bg_cinza">Perto</th>
                 </tr>
             </thead>
             <tbody>
@@ -139,8 +140,8 @@
         <table id="dados"> <!--primeira tabela nome e data de nascimento-->
             <thead>
                 <tr>
-                    <th>Nome do médico</th>
-                    <th>Data da receita</th>
+                    <th class="bg_cinza">Nome do médico</th>
+                    <th class="bg_cinza">Data da receita</th>
                 </tr>
             </thead>
             <tbody>
@@ -167,6 +168,8 @@
         </div>
 
     </main>
+
+    <script src="js/sidebar.js"></script>
 
 </body>
 
