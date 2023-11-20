@@ -1,98 +1,78 @@
-/* background, tam e fonte */
-body{
-    background-color: var(--cinza-claro);
-    width: 100%;
-    height: 100%;
+body {
+    background-color: var(--branco);
+}
 
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: var(--texto);
+}
+
+#prescription__t {
+    margin: 2rem;
+    padding-top: 1rem; 
+    font-size: 20px;
     font-weight: 600;
 }
-/* tamanho da faixa listrada */
-.faixa_listrada {
-    width: 100%;
-}
-/*tam e negrito p/ titulo */
-#receita_t {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 30px;
-}
-/* container q alinha todos os elementos do section */
-.container_receita {
-    width: 100%;
-    height: 100%;
 
-    display: flex;
-    justify-items: center;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-/* definindo alinhamento dos dois primeiros inputs ao centro */
-.linha_input {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-/* estilo dos inputs */
-.estilo_input {
-    width: 435px;
-    height: 40px;
-
+table, th, td {
+    background-color: var(--branco);
     border: 2px solid var(--preto);
-    border-radius: 25px;
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 20px;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 80%;
+    table-layout: fixed;
 }
 
-/* tam da tabela */
-table {
-    width: 1154px;
+.bg_cinza {
+    background-color: var(--cinza-claro);
 }
-/* definindo tamanhos das celulas e aplicando borda na tabela */
-table, tr, th, td {
-    height: 40px;
-    margin: 20px;
+
+#name, #birth, #dr__name, #date__prescription {
     text-align: center;
-    border: 2px solid var(--preto);
+    font-weight: 500;
 }
 
-/* alinhamento do footer */
-.alinhamento_footer {
-    width: 100%;
-    margin-bottom: 30px;
+#far, #close, #dados, #signature, h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
 
+.signature__space {
+    width: 80%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    padding: 2rem;
 }
-/* estilo do retangulo p/ assinatura */
-.assinatura_med {
-    width: 730px;
-    height: 98px;
-    margin-left: 200px; /* margem adicionada para compensar a largura da div dos icones(200px) e centralizar o retangulo */
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
 
+.signature {
+    width: 70%; 
+    max-width: 600px; 
+    position: relative;
+    height: 90px;
     border: 2px solid var(--preto);
+    padding-top: 1rem;
 }
-/* padding superior do titulo "assinatura do medico" */
-.assinatura_med h2 {
-    padding-top: 10px;
-}
-/* tam do icone impressora e download */
-.icones-menores {
-    max-width: 46px;
-}
-/* espaçamento entre os icones de impressora e dowload */
-.icones_img {
-    width: 200px;
+
+.icon_img {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#small_icons {
+    width: 45px;
+    padding: 1rem;
+}
+
+#small_icons:hover {
+    width: 50px;
+    padding: 1rem;
+    
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 200ms;
 }
